@@ -1,0 +1,543 @@
+{
+    "console.dir": {
+        "prefix": "cd",
+        "body": [
+            "console.dir($1);"
+        ],
+        "description": "console.dir()"
+    },
+    "console.error": {
+        "prefix": "ce",
+        "body": [
+            "console.error($1);"
+        ],
+        "description": "console.error()"
+    },
+    "console.info": {
+        "prefix": "ci",
+        "body": [
+            "console.info($1);"
+        ],
+        "description": "console.info()"
+    },
+    "console.log": {
+        "prefix": "cl",
+        "body": [
+            "console.log($1);"
+        ],
+        "description": "console.log()"
+    },
+    "console.warn": {
+        "prefix": "cw",
+        "body": [
+            "console.warn($1);"
+        ],
+        "description": "console.warn()"
+    },
+    "debugger": {
+        "prefix": "de",
+        "body": [
+            "debugger;$1"
+        ],
+        "description": "debugger"
+    },
+    "document": {
+        "prefix": "doc",
+        "body": [
+            "document"
+        ],
+        "description": "document"
+    },
+    "EventTarget.addEventListener": {
+        "prefix": ".ae",
+        "body": [
+            ".addEventListener('${1:type}', );"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.removeEventListener": {
+        "prefix": ".re",
+        "body": [
+            ".removeEventListener('${1:type}', );"
+        ],
+        "description": "The EventTarget.removeEventListener() method removes from the EventTarget an event listener previously registered with EventTarget.addEventListener()."
+    },
+    "EventTarget.addEventListener blur": {
+        "prefix": ".aeb",
+        "body": [
+            ".addEventListener('blur', e => $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.addEventListener click": {
+        "prefix": ".aec",
+        "body": [
+            ".addEventListener('click', e => $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.addEventListener change": {
+        "prefix": ".aech",
+        "body": [
+            ".addEventListener('change', e => $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.addEventListener focus": {
+        "prefix": ".aef",
+        "body": [
+            ".addEventListener('focus', e => $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.addEventListener focusout": {
+        "prefix": ".aefo",
+        "body": [
+            ".addEventListener('focusout', e => $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.addEventListener keydown": {
+        "prefix": ".aekd",
+        "body": [
+            ".addEventListener('keydown', e => $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.addEventListener mouseover": {
+        "prefix": ".aemov",
+        "body": [
+            ".addEventListener('mouseover', e => $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.addEventListener mouseout": {
+        "prefix": ".aemo",
+        "body": [
+            ".addEventListener('mouseout', e => $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.dispatchEvent": {
+        "prefix": ".de",
+        "body": [
+            ".dispatchEvent(${1:event});"
+        ],
+        "description": "Dispatches an Event at the specified EventTarget, (synchronously) invoking the affected EventListeners in the appropriate order."
+    },
+    "Node.parentElement": {
+        "prefix": ".pe",
+        "body": [
+            ".parentElement"
+        ],
+        "description": "The Node.parentElement read-only property returns the DOM node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element."
+    },
+    "Node.parentNode": {
+        "prefix": ".pn",
+        "body": [
+            ".parentNode"
+        ],
+        "description": "The Node.parentNode read-only property returns the parent of the specified node in the DOM tree."
+    },
+    "Node.appendChild": {
+        "prefix": ".ac",
+        "body": [
+            ".appendChild(${1:child});"
+        ],
+        "description": "The Node.appendChild() method adds a node to the end of the list of children of a specified parent node."
+    },
+    "Node.cloneNode": {
+        "prefix": ".cn",
+        "body": [
+            ".cloneNode(${1:true});"
+        ],
+        "description": "The Node.cloneNode() method returns a duplicate of the node on which this method was called."
+    },
+    "Node.contains": {
+        "prefix": ".con",
+        "body": [
+            ".contains(${1:otherNode});"
+        ],
+        "description": "The Node.contains() method returns a Boolean value indicating whether a node is a descendant of a given node."
+    },
+    "Node.removeChild": {
+        "prefix": ".rmc",
+        "body": [
+            ".removeChild(${1:child});"
+        ],
+        "description": "The Node.removeChild() method removes a child node from the DOM and returns the removed node."
+    },
+    "Node.replaceChild": {
+        "prefix": ".rc",
+        "body": [
+            ".replaceChild(${1:child}, );"
+        ],
+        "description": "The Node.replaceChild() method replaces a child node within the given (parent) node."
+    },
+    "createElement": {
+        "prefix": "cel",
+        "body": [
+            "const $1 = document.createElement('${1:<tag:String>}');"
+        ],
+        "description": "Create element"
+    },
+    "class": {
+        "prefix": "cla",
+        "body": [
+            "class $1 {",
+            "\tconstructor(props) {",
+            "\t",
+            "}"
+        ],
+        "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
+    },
+    "class export": {
+        "prefix": "clae",
+        "body": [
+            "export class $1 {",
+            "\tconstructor(props) {",
+            "\t",
+            "}"
+        ],
+        "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
+    },
+    "class export default": {
+        "prefix": "claed",
+        "body": [
+            "export default class $1 {",
+            "\tconstructor(props) {",
+            "\t",
+            "}"
+        ],
+        "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
+    },
+    "Element.classList": {
+        "prefix": ".cl",
+        "body": [
+            ".classList;"
+        ],
+        "description": "The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element."
+    },
+    "Element.classList.add": {
+        "prefix": ".cla",
+        "body": [
+            ".classList.add('${1:String}');"
+        ],
+        "description": "Adds the specified class values. If these classes already exist in the element's class attribute they are ignored."
+    },
+    "Element.classList.contains": {
+        "prefix": ".clc",
+        "body": [
+            ".classList.contains('${1:String}');"
+        ],
+        "description": "Checks if the specified class value exists in the element's class attribute."
+    },
+    "Element.classList.remove": {
+        "prefix": ".clrm",
+        "body": [
+            ".classList.remove('${1:String}');"
+        ],
+        "description": "Removes the specified class values."
+    },
+    "Element.classList.replace": {
+        "prefix": ".clr",
+        "body": [
+            ".classList.replace('${1:String}', '');"
+        ],
+        "description": "Replaces an existing class with a new class."
+    },
+    "Element.classList.toggle": {
+        "prefix": ".clt",
+        "body": [
+            ".classList.toggle('${1:String [, force]}');"
+        ],
+        "description": "When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return false, if not, then add it and return true."
+    },
+    "Node.innerHTML": {
+        "prefix": ".ih",
+        "body": [
+            ".innerHTML;"
+        ],
+        "description": "The Element property innerHTML gets or sets the HTML or XML markup contained within the element."
+    },
+    "Node.innerHTML set": {
+        "prefix": ".ihs",
+        "body": [
+            ".innerHTML = '$1';"
+        ],
+        "description": "The Element property innerHTML gets or sets the HTML or XML markup contained within the element."
+    },
+    "Node.outerHTML": {
+        "prefix": ".oh",
+        "body": [
+            ".outerHTML;"
+        ],
+        "description": "The outerHTML attribute of the Element DOM interface gets the serialized HTML fragment describing the element including its descendants."
+    },
+    "Node.outerHTML set": {
+        "prefix": ".ohs",
+        "body": [
+            ".outerHTML = '$1';"
+        ],
+        "description": "The outerHTML attribute of the Element DOM interface gets the serialized HTML fragment describing the element including its descendants."
+    },
+    "Node.textContent": {
+        "prefix": ".tc",
+        "body": [
+            ".textContent;"
+        ],
+        "description": "The textContent property of the Node interface represents the text content of the node and its descendants."
+    },
+    "Node.textContent set": {
+        "prefix": ".tcs",
+        "body": [
+            ".textContent = '$1';"
+        ],
+        "description": "The textContent property of the Node interface represents the text content of the node and its descendants."
+    },
+    "Element.getElementById": {
+        "prefix": ".gebi",
+        "body": [
+            ".getElementById('${1:id}');"
+        ],
+        "description": "The Document method getElementById() returns an Element object representing the element whose id property matches the specified string."
+    },
+    "Element.getElementsByClassName": {
+        "prefix": ".gebc",
+        "body": [
+            ".getElementsByClassName('${1:class}');"
+        ],
+        "description": "The Element method getElementsByClassName() returns a live HTMLCollection which contains every descendant element which has the specified class name or names."
+    },
+    "Element.getElementsByTagName": {
+        "prefix": ".gebt",
+        "body": [
+            ".getElementsByTagName('${1:tag}');"
+        ],
+        "description": "The Element.getElementsByTagName() method returns a live HTMLCollection of elements with the given tag name."
+    },
+    "Element.getAttribute": {
+        "prefix": ".ga",
+        "body": [
+            ".getAttribute('${1:attr}');"
+        ],
+        "description": "The getAttribute() method of the Element interface returns the value of a specified attribute on the element."
+    },
+    "Element.hasAttribute": {
+        "prefix": ".ha",
+        "body": [
+            ".hasAttribute('${1:attr}');"
+        ],
+        "description": "The Element.hasAttribute() method returns a Boolean value indicating whether the specified element has the specified attribute or not."
+    },
+    "Element.setAttribute": {
+        "prefix": ".sa",
+        "body": [
+            ".setAttribute('$1', '');"
+        ],
+        "description": ".setAttribute('<attr: String>', '<val: String>')"
+    },
+    "Element.removeAttribute": {
+        "prefix": ".ra",
+        "body": [
+            ".removeAttribute('${1:attr}');"
+        ],
+        "description": "The Element method removeAttribute() removes the attribute with the specified name from the element."
+    },
+    "Element.querySelector": {
+        "prefix": ".qs",
+        "body": [
+            ".querySelector('${1:selector}');"
+        ],
+        "description": "The querySelector() method of the Element interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors."
+    },
+    "Element.querySelectorAll": {
+        "prefix": ".qsa",
+        "body": [
+            ".querySelectorAll('${1:selector}');"
+        ],
+        "description": "The Element method querySelectorAll() returns a static (not live) NodeList representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called."
+    },
+    "Array.prototype.forEach": {
+        "prefix": ".fore",
+        "body": [
+            ".forEach(item => $1);"
+        ],
+        "description": "The forEach() method executes a provided function once for each array element."
+    },
+    "for": {
+        "prefix": ".for",
+        "body": [
+            ".for (let i = 0; i < $1.length; i += 1) {",
+            ".\tconst item = $1[i];",
+            ".}"
+        ],
+        "description": "for"
+    },
+    "for of": {
+        "prefix": ".foro",
+        "body": [
+            ".for (const el of $1) {",
+            ".\t",
+            ".}"
+        ],
+        "description": "for (const el of <arr: []>) {}"
+    },
+    "for in": {
+        "prefix": ".fori",
+        "body": [
+            ".for (const el in $1) {",
+            ".\t",
+            ".}"
+        ],
+        "description": "for (const el of <<obj: Object>>) {}"
+    },
+    "while": {
+        "prefix": ".while",
+        "body": [
+            ".while ($1) {",
+            ".\t",
+            ".}"
+        ],
+        "description": "while (<cond>) {}"
+    },
+    "do while": {
+        "prefix": "dw",
+        "body": [
+            "do {",
+            "\t$1",
+            "} while ();"
+        ],
+        "description": "do {} while (<cond>) {}"
+    },
+    "function": {
+        "prefix": "fn",
+        "body": [
+            "function $1() {",
+            "\t",
+            "}"
+        ],
+        "description": "function <fnName>() {}"
+    },
+    "anonymous function": {
+        "prefix": "fna",
+        "body": [
+            "function() {",
+            "\t$1",
+            "}"
+        ],
+        "description": "function anonymous"
+    },
+    "function arrow": {
+        "prefix": "fnar",
+        "body": [
+            "() => {$1}"
+        ],
+        "description": "function arrow"
+    },
+    "event function arrow": {
+        "prefix": "efnar",
+        "body": [
+            "(e) => {$1}"
+        ],
+        "description": "event function arrow"
+    },
+    "function arrow const": {
+        "prefix": "fnarc",
+        "body": [
+            "const $1 = () => {};"
+        ],
+        "description": "function arrow const"
+    },
+    "function iife": {
+        "prefix": "iife",
+        "body": [
+            "($1)();"
+        ],
+        "description": "(fna)(args)"
+    },
+    "function apply": {
+        "prefix": ".apply",
+        "body": [
+            ".apply($1);"
+        ],
+        "description": ".apply(<context: Object>, <args: []>)"
+    },
+    "function bind": {
+        "prefix": ".bind",
+        "body": [
+            ".bind($1);"
+        ],
+        "description": ".bind(<context: Object>, arg1, argN)"
+    },
+    "function call": {
+        "prefix": ".call",
+        "body": [
+            ".call($1);"
+        ],
+        "description": ".apply(<thisArg: Object>, arg1, argN)"
+    },
+    "prototype": {
+        "prefix": ".proto",
+        "body": [
+            ".prototype.$1 = "
+        ],
+        "description": ".prototype.<fnName: String> = fn"
+    },
+    "JSON.parse": {
+        "prefix": "jsonp",
+        "body": [
+            "JSON.parse($1);"
+        ],
+        "description": "JSON.parse(str: String)"
+    },
+    "JSON.stringify": {
+        "prefix": "jsons",
+        "body": [
+            "JSON.stringify($1);"
+        ],
+        "description": "JSON.stringify(<obj: Object>)"
+    },
+    "setInterval": {
+        "prefix": "si",
+        "body": [
+            "setInterval($1, 3000);"
+        ],
+        "description": "setInterval(afn, 3000)"
+    },
+    "setTimeout": {
+        "prefix": "st",
+        "body": [
+            "setTimeout($1, 3000);"
+        ],
+        "description": "setTimeout(afn, 3000)"
+    },
+    "use strict": {
+        "prefix": "us",
+        "body": [
+            "'use strict';"
+        ],
+        "description": "'use strict'"
+    },
+    "alert": {
+        "prefix": "al",
+        "body": [
+            "alert('$1');"
+        ],
+        "description": "alert('<text: String>')"
+    },
+    "confirm": {
+        "prefix": "co",
+        "body": [
+            "confirm('$1');"
+        ],
+        "description": "confirm('<text: String>')"
+    },
+    "prompt": {
+        "prefix": "pr",
+        "body": [
+            "prompt('$1');"
+        ],
+        "description": "prompt('<text: String>')"
+    }
+}

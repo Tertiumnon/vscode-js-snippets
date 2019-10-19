@@ -1,287 +1,65 @@
-## JavaScript Snippet Pack for Visual Studio Code
+# JavaScript Snippets for Visual Studio Code
 
-Download this extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items/akamud.vscode-javascript-snippet-pack)
+This is the README for your extension "tertium-vsc-js-snippets". After writing up a brief description, we recommend including the following sections.
 
------------------------------------------
+## Features
 
-A snippet pack to make you more productive working with JavaScript.
-Based on [Visual Studio extension](https://github.com/madskristensen/JavaScriptSnippetPack) by [Mads Kristensen](https://github.com/madskristensen), which is based on [Atom snippets](https://atom.io/packages/javascript-snippets).
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-This extension ships a bunch of useful code snippets for the JavaScript and TypeScript editors.
+For example if there is an image subfolder under your extension project workspace:
 
-Here's the full list of all the snippets:
+\!\[feature X\]\(images/feature-x.png\)
 
-## Console
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-### [cd] console.dir
+## Requirements
 
-```javascript
-console.dir(${1});
-```
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-### [ce] console.error
+## Extension Settings
 
-```javascript
-console.error(${1});
-```
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-### [ci] console.info
+For example:
 
-```javascript
-console.info(${1});
-```
+This extension contributes the following settings:
 
-### [cl] console.log
+* `myExtension.enable`: enable/disable this extension
+* `myExtension.thing`: set to `blah` to do something
 
-```javascript
-console.log(${1});
-```
+## Known Issues
 
-### [cw] console.warn
+Calling out known issues can help limit users opening duplicate issues against your extension.
 
-```javascript
-console.warn(${1});
-```
+## Release Notes
 
-### [de] debugger
+Users appreciate release notes as you update your extension.
 
-```javascript
-debugger;
-```
+### 1.0.0
 
-## DOM
+Initial release of ...
 
-### [ae] addEventListener
+### 1.0.1
 
-```javascript
-${1:document}.addEventListener('${2:load}', function(e) {
-	${3:// body}
-});
-```
+Fixed issue #.
 
-### [ac] appendChild
+### 1.1.0
 
-```javascript
-${1:document}.appendChild(${2:elem});
-```
+Added features X, Y, and Z.
 
-### [rc] removeChild
+-----------------------------------------------------------------------------------------------------------
 
-```javascript
-${1:document}.removeChild(${2:elem});
-```
+## Working with Markdown
 
-### [cel] createElement
+**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
 
-```javascript
-${1:document}.createElement(${2:elem});
-```
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
+* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
+* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
 
-### [cdf] createDocumentFragment
+### For more information
 
-```javascript
-${1:document}.createDocumentFragment();
-```
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-### [ca] classList.add
-
-```javascript
-${1:document}.classList.add('${2:class}');
-```
-
-### [ct] classList.toggle
-
-```javascript
-${1:document}.classList.toggle('${2:class}');
-```
-
-### [cr] classList.remove
-
-```javascript
-${1:document}.classList.remove('${2:class}');
-```
-
-### [gi] getElementById
-
-```javascript
-${1:document}.getElementById('${2:id}');
-```
-
-### [gc] getElementsByClassName
-
-```javascript
-${1:document}.getElementsByClassName('${2:class}');
-```
-
-### [gt] getElementsByTagName
-
-```javascript
-${1:document}.getElementsByTagName('${2:tag}');
-```
-
-### [ga] getAttribute
-
-```javascript
-${1:document}.getAttribute('${2:attr}');
-```
-
-### [sa] setAttribute
-
-```javascript
-${1:document}.setAttribute('${2:attr}', ${3:value});
-```
-
-### [ra] removeAttribute
-
-```javascript
-${1:document}.removeAttribute('${2:attr}');
-```
-
-### [ih] innerHTML
-
-```javascript
-${1:document}.innerHTML = '${2:elem}';
-```
-
-### [tc] textContent
-
-```javascript
-${1:document}.textContent = '${2:content}';
-```
-
-### [qs] querySelector
-
-```javascript
-${1:document}.querySelector('${2:selector}');
-```
-
-### [qsa] querySelectorAll
-
-```javascript
-${1:document}.querySelectorAll('${2:selector}');
-```
-
-## Loop
-
-### [fe] forEach
-
-```javascript
-${1:array}.forEach(function(item) {
-	${2:// body}
-});
-```
-
-## Function
-
-### [fn] function
-
-```javascript
-function ${1:methodName} (${2:arguments}) {
-	${3:// body}
-}
-```
-
-### [afn] anonymous function
-
-```javascript
-function(${1:arguments}) {
-	${2:// body}
-}
-```
-
-### [pr] prototype
-
-```javascript
-${1:object}.prototype.${2:method} = function(${3:arguments}) {
-	${4:// body}
-}
-```
-
-### [iife] immediately-invoked function expression
-
-```javascript
-(function(${1:window}, ${2:document}) {
-	${3:// body}
-})(${1:window}, ${2:document});
-```
-
-### [call] function call
-
-```javascript
-${1:method}.call(${2:context}, ${3:arguments})
-```
-
-### [apply] function apply
-
-```javascript
-${1:method}.apply(${2:context}, [${3:arguments}])
-```
-
-### [ofn] function as a property of an object
-
-```javascript
-${1:functionName}: function(${2:arguments}) {
-	${3:// body}
-}
-```
-
-## JSON
-
-### [jp] JSON.parse
-
-```javascript
-JSON.parse(${1:obj});
-```
-
-### [js] JSON.stringify
-
-```javascript
-JSON.stringify(${1:obj});
-```
-
-## Timer
-
-### [si] setInterval
-
-```javascript
-setInterval(function() {
-	${0:// body}
-}, ${1:1000});
-```
-
-### [st] setTimeout
-
-```javascript
-setTimeout(function() {
-	${0:// body}
-}, ${1:1000});
-```
-
-## Misc
-
-### [us] use strict
-
-```javascript
-'use strict';
-```
-
-### [al] alert
-
-```javascript
-alert('${1:msg}');
-```
-
-### [co] confirm
-
-```javascript
-confirm('${1:msg}');
-```
-
-### [pm] prompt
-
-```javascript
-prompt('${1:msg}');
-```
-
-## License
-[MIT License](https://raw.githubusercontent.com/akamud/vscode-javascript-snippet-pack/master/LICENSE)
+**Enjoy!**
