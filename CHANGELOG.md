@@ -7,3 +7,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - More JS snippets
+
+## [1.0.1] - 2019-10-20
+
+### Changed
+
+- Fixed README images
+- Changed filter declaration (".film")
+
+## [1.0.0] - 2019-10-20
+
+- Initial release
