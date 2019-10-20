@@ -2,8 +2,12 @@
     "name": "tertium-js-snippets",
     "displayName": "Tertium JS Snippets",
     "description": "JavaScript Snippets for Visual Studio Code",
+    "publisher": "vittertiumnon",
+    "repository": {
+        "url": "https://github.com/Tertiumnon/tertium-js-snippets"
+    },
     "icon": "images/logo.png",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.39.0"
     },
