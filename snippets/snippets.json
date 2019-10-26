@@ -442,7 +442,7 @@
         "prefix": "clbar",
         "body": [
             "(item, i, arr) => {",
-            "\t{$1}",
+            "\t$1",
             "};"
         ],
         "description": "Create standart array callback."
@@ -451,7 +451,7 @@
         "prefix": ".map",
         "body": [
             ".map((item, i, arr) => {",
-            "\t{$1}",
+            "\t$1",
             "};"
         ],
         "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
@@ -459,7 +459,7 @@
     "Array.prototype.map min": {
         "prefix": ".mapm",
         "body": [
-            ".map(item => {$1})"
+            ".map(item => $1)"
         ],
         "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
     },
@@ -467,7 +467,7 @@
         "prefix": ".eve",
         "body": [
             ".every((item, i, arr) => {",
-            "\t{$1}",
+            "\t$1",
             "};"
         ],
         "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."
@@ -475,7 +475,7 @@
     "Array.prototype.every min": {
         "prefix": ".evem",
         "body": [
-            ".every(item => {$1})"
+            ".every(item => $1)"
         ],
         "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."
     },
@@ -483,7 +483,7 @@
         "prefix": ".fil",
         "body": [
             ".filter((item, i, arr) => {",
-            "\t{$1}",
+            "\t$1",
             "};"
         ],
         "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
@@ -491,7 +491,7 @@
     "Array.prototype.filter min": {
         "prefix": ".film",
         "body": [
-            ".filter(item => {$1})"
+            ".filter(item => $1)"
         ],
         "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
     },
@@ -499,16 +499,33 @@
         "prefix": ".fore",
         "body": [
             ".forEach((item, i, arr) => {",
-            "\t{$1}",
+            "\t$1",
             "};"
+        ],
+        "description": "The forEach() method executes a provided function once for each array element."
+    },
+    "Array.prototype.forEach min": {
+        "prefix": ".fore",
+        "body": [
+            ".forEach(item => $1};"
         ],
         "description": "The forEach() method executes a provided function once for each array element."
     },
     "for": {
         "prefix": "for",
         "body": [
-            "for (let i = 0; i < $1.length; i += 1) {",
-            "\tconst item = $1[i];",
+            "const l = arr.length;",
+            "for (let $1 = 0; $1 < l; $1 += 1) {",
+            "\tconst item = arr[$1];",
+            "}"
+        ],
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
+    },
+    "for min": {
+        "prefix": "form",
+        "body": [
+            "for (let $1 = 0; $1 < l; $1 += 1) {",
+            "\t",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
