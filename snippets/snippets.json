@@ -505,7 +505,7 @@
         "description": "The forEach() method executes a provided function once for each array element."
     },
     "Array.prototype.forEach min": {
-        "prefix": ".fore",
+        "prefix": ".forem",
         "body": [
             ".forEach(item => $1};"
         ],
