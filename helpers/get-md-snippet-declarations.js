@@ -8,8 +8,8 @@ let data = JSON.parse(rawData);
 for (const prop in data) {
   if (data.hasOwnProperty(prop)) {
     const el = data[prop];
-    res += `${el.prefix} -> ${el.body}\n`;
+    res += `${el.prefix} -> ${(el.body.join(' ')).replace(/\t/, '')}\n`;
   }
 }
 
-console.log(res)
+console.log(res);
