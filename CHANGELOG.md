@@ -8,9 +8,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - More JS snippets
 
-## [1.0.1] - 2019-10-20
+## [1.0.4] - 2019-10-20
 
-### Changed
+- Fixed brackets, semicolons, line breaks
+
+## [1.0.1] - 2019-10-20
 
 - Fixed README images
 - Changed filter declaration (".film")

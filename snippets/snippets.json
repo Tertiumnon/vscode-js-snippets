@@ -2,35 +2,35 @@
     "Console.dir": {
         "prefix": "cd",
         "body": [
-            "console.dir($1);"
+            "console.dir($1)"
         ],
         "description": "The Console method dir() displays an interactive list of the properties of the specified JavaScript object."
     },
     "Console.error": {
         "prefix": "ce",
         "body": [
-            "console.error($1);"
+            "console.error($1)"
         ],
         "description": "Outputs an error message to the Web Console."
     },
     "Console.info": {
         "prefix": "ci",
         "body": [
-            "console.info($1);"
+            "console.info($1)"
         ],
         "description": "Outputs an informational message to the Web Console. Only in Firefox, a small \"i\" icon is displayed next to these items in the Web Console's log."
     },
     "Console.log": {
         "prefix": "cl",
         "body": [
-            "console.log($1);"
+            "console.log($1)"
         ],
         "description": "The Console method log() outputs a message to the web console."
     },
     "Console.warn": {
         "prefix": "cw",
         "body": [
-            "console.warn($1);"
+            "console.warn($1)"
         ],
         "description": "Outputs a warning message to the Web Console."
     },
@@ -51,77 +51,77 @@
     "EventTarget.addEventListener": {
         "prefix": ".ae",
         "body": [
-            ".addEventListener('$1', );"
+            ".addEventListener('$1', )"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.removeEventListener": {
         "prefix": ".re",
         "body": [
-            ".removeEventListener('$1', );"
+            ".removeEventListener('$1', )"
         ],
         "description": "The EventTarget.removeEventListener() method removes from the EventTarget an event listener previously registered with EventTarget.addEventListener()."
     },
     "EventTarget.addEventListener blur": {
         "prefix": ".aeb",
         "body": [
-            ".addEventListener('blur', e => $1);"
+            ".addEventListener('blur', $1)"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener click": {
         "prefix": ".aec",
         "body": [
-            ".addEventListener('click', e => $1);"
+            ".addEventListener('click', $1)"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener change": {
         "prefix": ".aech",
         "body": [
-            ".addEventListener('change', e => $1);"
+            ".addEventListener('change', $1)"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener focus": {
         "prefix": ".aef",
         "body": [
-            ".addEventListener('focus', e => $1);"
+            ".addEventListener('focus', $1)"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener focusout": {
         "prefix": ".aefo",
         "body": [
-            ".addEventListener('focusout', e => $1);"
+            ".addEventListener('focusout', $1)"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener keydown": {
         "prefix": ".aekd",
         "body": [
-            ".addEventListener('keydown', e => $1);"
+            ".addEventListener('keydown', $1)"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener mouseover": {
         "prefix": ".aemov",
         "body": [
-            ".addEventListener('mouseover', e => $1);"
+            ".addEventListener('mouseover', $1)"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener mouseout": {
         "prefix": ".aemo",
         "body": [
-            ".addEventListener('mouseout', e => $1);"
+            ".addEventListener('mouseout', $1)"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.dispatchEvent": {
         "prefix": ".de",
         "body": [
-            ".dispatchEvent($1);"
+            ".dispatchEvent($1)"
         ],
         "description": "Dispatches an Event at the specified EventTarget, (synchronously) invoking the affected EventListeners in the appropriate order."
     },
@@ -142,49 +142,49 @@
     "Node.appendChild": {
         "prefix": ".ac",
         "body": [
-            ".appendChild($1);"
+            ".appendChild($1)"
         ],
         "description": "The Node.appendChild() method adds a node to the end of the list of children of a specified parent node."
     },
     "Node.insertBefore": {
         "prefix": ".ib",
         "body": [
-            ".insertBefore($1);"
+            ".insertBefore($1)"
         ],
         "description": "The Node.insertBefore() method inserts a node before the reference node as a child of a specified parent node."
     },
     "Node.cloneNode": {
         "prefix": ".cn",
         "body": [
-            ".cloneNode($1);"
+            ".cloneNode($1)"
         ],
         "description": "The Node.cloneNode() method returns a duplicate of the node on which this method was called."
     },
     "Node.contains": {
         "prefix": ".cont",
         "body": [
-            ".contains($1);"
+            ".contains($1)"
         ],
         "description": "The Node.contains() method returns a Boolean value indicating whether a node is a descendant of a given node."
     },
     "Node.removeChild": {
         "prefix": ".rmc",
         "body": [
-            ".removeChild($1);"
+            ".removeChild($1)"
         ],
         "description": "The Node.removeChild() method removes a child node from the DOM and returns the removed node."
     },
     "Node.replaceChild": {
         "prefix": ".rc",
         "body": [
-            ".replaceChild($1, );"
+            ".replaceChild($1, )"
         ],
         "description": "The Node.replaceChild() method replaces a child node within the given (parent) node."
     },
     "Document.createElement": {
         "prefix": "cel",
         "body": [
-            "const $1 = document.createElement('${1}');"
+            "const $1 = document.createElement('$1');"
         ],
         "description": "In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized."
     },
@@ -192,9 +192,7 @@
         "prefix": "cla",
         "body": [
             "class $1 {",
-            "\tconstructor(props) {",
-            "\t",
-            "\t}",
+            "\tconstructor(props) {}",
             "}"
         ],
         "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
@@ -203,9 +201,7 @@
         "prefix": "clae",
         "body": [
             "export class $1 {",
-            "\tconstructor(props) {",
-            "\t",
-            "\t}",
+            "\tconstructor(props) {}",
             "}"
         ],
         "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
@@ -214,9 +210,7 @@
         "prefix": "claed",
         "body": [
             "export default class $1 {",
-            "\tconstructor(props) {",
-            "\t",
-            "\t}",
+            "\tconstructor(props) {}",
             "}"
         ],
         "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
@@ -231,7 +225,7 @@
     "Element.classList.add": {
         "prefix": ".cla",
         "body": [
-            ".classList.add('$1');"
+            ".classList.add('$1')"
         ],
         "description": "Adds the specified class values. If these classes already exist in the element's class attribute they are ignored."
     },
@@ -245,21 +239,21 @@
     "Element.classList.remove": {
         "prefix": ".clrm",
         "body": [
-            ".classList.remove('$1');"
+            ".classList.remove('$1')"
         ],
         "description": "Removes the specified class values."
     },
     "Element.classList.replace": {
         "prefix": ".clr",
         "body": [
-            ".classList.replace('$1', '');"
+            ".classList.replace('$1', '')"
         ],
         "description": "Replaces an existing class with a new class."
     },
     "Element.classList.toggle": {
         "prefix": ".clt",
         "body": [
-            ".classList.toggle('${1}');"
+            ".classList.toggle('$1')"
         ],
         "description": "When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return false, if not, then add it and return true."
     },
@@ -273,7 +267,7 @@
     "Node.innerHTML set": {
         "prefix": ".ihs",
         "body": [
-            ".innerHTML = '$1';"
+            ".innerHTML = '$1'"
         ],
         "description": "The Element property innerHTML gets or sets the HTML or XML markup contained within the element."
     },
@@ -287,7 +281,7 @@
     "Node.outerHTML set": {
         "prefix": ".ohs",
         "body": [
-            ".outerHTML = '$1';"
+            ".outerHTML = '$1'"
         ],
         "description": "The outerHTML attribute of the Element DOM interface gets the serialized HTML fragment describing the element including its descendants."
     },
@@ -301,7 +295,7 @@
     "Node.textContent set": {
         "prefix": ".tcs",
         "body": [
-            ".textContent = '$1';"
+            ".textContent = '$1'"
         ],
         "description": "The textContent property of the Node interface represents the text content of the node and its descendants."
     },
@@ -343,14 +337,14 @@
     "Element.setAttribute": {
         "prefix": ".sa",
         "body": [
-            ".setAttribute('$1', '');"
+            ".setAttribute('$1', '')"
         ],
         "description": ".setAttribute('<attr: String>', '<val: String>')"
     },
     "Element.removeAttribute": {
         "prefix": ".ra",
         "body": [
-            ".removeAttribute('$1');"
+            ".removeAttribute('$1')"
         ],
         "description": "The Element method removeAttribute() removes the attribute with the specified name from the element."
     },
@@ -443,7 +437,7 @@
         "body": [
             "(item, i, arr) => {",
             "\t$1",
-            "};"
+            "})"
         ],
         "description": "Create standart array callback."
     },
@@ -452,7 +446,7 @@
         "body": [
             ".map((item, i, arr) => {",
             "\t$1",
-            "};"
+            "})"
         ],
         "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
     },
@@ -468,7 +462,7 @@
         "body": [
             ".every((item, i, arr) => {",
             "\t$1",
-            "};"
+            "})"
         ],
         "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."
     },
@@ -484,7 +478,7 @@
         "body": [
             ".filter((item, i, arr) => {",
             "\t$1",
-            "};"
+            "})"
         ],
         "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
     },
@@ -500,14 +494,14 @@
         "body": [
             ".forEach((item, i, arr) => {",
             "\t$1",
-            "};"
+            "})"
         ],
         "description": "The forEach() method executes a provided function once for each array element."
     },
     "Array.prototype.forEach min": {
         "prefix": ".forem",
         "body": [
-            ".forEach(item => $1};"
+            ".forEach(item => $1)"
         ],
         "description": "The forEach() method executes a provided function once for each array element."
     },
@@ -591,7 +585,7 @@
         "body": [
             "function() {",
             "\t$1",
-            "};"
+            "}"
         ],
         "description": "An anonymous function is a function without a function name."
     },
@@ -609,14 +603,14 @@
         "body": [
             "($1) => {",
             "\t",
-            "};"
+            "}"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
     },
     "function arrow min": {
         "prefix": "fnarm",
         "body": [
-            "$1 => ;"
+            "() => { $1 }"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
     },
@@ -632,21 +626,21 @@
     "Function.prototype.apply": {
         "prefix": ".apply",
         "body": [
-            ".apply($1);"
+            ".apply($1)"
         ],
         "description": "The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object)."
     },
     "Function.prototype.bind": {
         "prefix": ".bind",
         "body": [
-            ".bind($1);"
+            ".bind($1)"
         ],
         "description": "The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called."
     },
     "Function.prototype.call": {
         "prefix": ".call",
         "body": [
-            ".call($1);"
+            ".call($1)"
         ],
         "description": "The call() method calls a function with a given this value and arguments provided individually."
     },
@@ -674,28 +668,46 @@
     "WindowOrWorkerGlobalScope.setInterval": {
         "prefix": ".si",
         "body": [
-            ".setInterval($1, 3000);"
+            ".setInterval(() => {",
+            "\t$1",
+            "}, 3000);"
+        ],
+        "description": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call."
+    },
+    "WindowOrWorkerGlobalScope.setInterval min": {
+        "prefix": ".sim",
+        "body": [
+            ".setInterval(() => {$1}, 3000)"
         ],
         "description": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call."
     },
     "WindowOrWorkerGlobalScope.clearInterval": {
         "prefix": ".ci",
         "body": [
-            ".clearInterval($1);"
+            ".clearInterval($1)"
         ],
         "description": "The clearInterval() method of the WindowOrWorkerGlobalScope mixin cancels a timed, repeating action which was previously established by a call to setInterval()."
     },
     "WindowOrWorkerGlobalScope.setTimeout": {
         "prefix": ".st",
         "body": [
-            ".setTimeout($1, 3000);"
+            ".setTimeout(() => {",
+            "\t$1",
+            "}, 3000);"
+        ],
+        "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires."
+    },
+    "WindowOrWorkerGlobalScope.setTimeout min": {
+        "prefix": ".stm",
+        "body": [
+            ".setTimeout(() => {$1}, 3000)"
         ],
         "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires."
     },
     "WindowOrWorkerGlobalScope.clearTime": {
         "prefix": ".ct",
         "body": [
-            ".clearTimeout($1);"
+            ".clearTimeout($1)"
         ],
         "description": "The clearTimeout() method of the WindowOrWorkerGlobalScope mixin cancels a timeout previously established by calling setTimeout()."
     },
