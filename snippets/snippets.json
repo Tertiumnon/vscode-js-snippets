@@ -2,12 +2,26 @@
     "Console.dir": {
         "prefix": "cd",
         "body": [
+            "console.dir($1);"
+        ],
+        "description": "The Console method dir() displays an interactive list of the properties of the specified JavaScript object."
+    },
+    "Console.dir min": {
+        "prefix": "cdm",
+        "body": [
             "console.dir($1)"
         ],
         "description": "The Console method dir() displays an interactive list of the properties of the specified JavaScript object."
     },
     "Console.error": {
         "prefix": "ce",
+        "body": [
+            "console.error($1);"
+        ],
+        "description": "Outputs an error message to the Web Console."
+    },
+    "Console.error min": {
+        "prefix": "cem",
         "body": [
             "console.error($1)"
         ],
@@ -16,6 +30,13 @@
     "Console.info": {
         "prefix": "ci",
         "body": [
+            "console.info($1);"
+        ],
+        "description": "Outputs an informational message to the Web Console. Only in Firefox, a small \"i\" icon is displayed next to these items in the Web Console's log."
+    },
+    "Console.info min": {
+        "prefix": "cim",
+        "body": [
             "console.info($1)"
         ],
         "description": "Outputs an informational message to the Web Console. Only in Firefox, a small \"i\" icon is displayed next to these items in the Web Console's log."
@@ -23,12 +44,26 @@
     "Console.log": {
         "prefix": "cl",
         "body": [
+            "console.log($1);"
+        ],
+        "description": "The Console method log() outputs a message to the web console."
+    },
+    "Console.log min": {
+        "prefix": "clm",
+        "body": [
             "console.log($1)"
         ],
         "description": "The Console method log() outputs a message to the web console."
     },
     "Console.warn": {
         "prefix": "cw",
+        "body": [
+            "console.warn($1);"
+        ],
+        "description": "Outputs a warning message to the Web Console."
+    },
+    "Console.warn min": {
+        "prefix": "cwm",
         "body": [
             "console.warn($1)"
         ],
@@ -51,70 +86,77 @@
     "EventTarget.addEventListener": {
         "prefix": ".ae",
         "body": [
-            ".addEventListener('$1', )"
+            ".addEventListener('$1', );"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.removeEventListener": {
         "prefix": ".re",
         "body": [
-            ".removeEventListener('$1', )"
+            ".removeEventListener('$1', );"
         ],
         "description": "The EventTarget.removeEventListener() method removes from the EventTarget an event listener previously registered with EventTarget.addEventListener()."
     },
     "EventTarget.addEventListener blur": {
         "prefix": ".aeb",
         "body": [
-            ".addEventListener('blur', $1)"
+            ".addEventListener('blur', $1);"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener click": {
         "prefix": ".aec",
         "body": [
-            ".addEventListener('click', $1)"
+            ".addEventListener('click', $1);"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener change": {
         "prefix": ".aech",
         "body": [
-            ".addEventListener('change', $1)"
+            ".addEventListener('change', $1);"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener focus": {
         "prefix": ".aef",
         "body": [
-            ".addEventListener('focus', $1)"
+            ".addEventListener('focus', $1);"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener focusout": {
         "prefix": ".aefo",
         "body": [
-            ".addEventListener('focusout', $1)"
+            ".addEventListener('focusout', $1);"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
+    },
+    "EventTarget.addEventListener input": {
+        "prefix": ".aei",
+        "body": [
+            ".addEventListener('input', $1);"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener keydown": {
         "prefix": ".aekd",
         "body": [
-            ".addEventListener('keydown', $1)"
+            ".addEventListener('keydown', $1);"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener mouseover": {
         "prefix": ".aemov",
         "body": [
-            ".addEventListener('mouseover', $1)"
+            ".addEventListener('mouseover', $1);"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
     "EventTarget.addEventListener mouseout": {
         "prefix": ".aemo",
         "body": [
-            ".addEventListener('mouseout', $1)"
+            ".addEventListener('mouseout', $1);"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
     },
@@ -412,34 +454,25 @@
         "description": "The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array."
     },
     "Array.prototype.entries": {
-        "prefix": ".ent",
+        "prefix": "obje",
         "body": [
-            ".entries()"
+            "Object.entries($1)"
         ],
         "description": "The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array."
     },
     "Array.prototype.keys": {
-        "prefix": ".key",
+        "prefix": "objk",
         "body": [
-            ".keys()"
+            "Object.keys($1)"
         ],
         "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array."
     },
     "Array.prototype.values": {
-        "prefix": ".val",
+        "prefix": "objv",
         "body": [
-            ".values()"
+            "Object.values($1)"
         ],
         "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array."
-    },
-    "Array callback": {
-        "prefix": "clbar",
-        "body": [
-            "(item, i, arr) => {",
-            "\t$1",
-            "})"
-        ],
-        "description": "Create standart array callback."
     },
     "Array.prototype.map": {
         "prefix": ".map",
@@ -580,15 +613,6 @@
         ],
         "description": "A function is a code snippet that can be called by other code or by itself, or a variable that refers to the function."
     },
-    "anonymous function": {
-        "prefix": "fna",
-        "body": [
-            "function() {",
-            "\t$1",
-            "}"
-        ],
-        "description": "An anonymous function is a function without a function name."
-    },
     "function iife": {
         "prefix": "iife",
         "body": [
@@ -598,11 +622,20 @@
         ],
         "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined."
     },
+    "anonymous function": {
+        "prefix": "fna",
+        "body": [
+            "function() {",
+            "\t$1",
+            "}"
+        ],
+        "description": "An anonymous function is a function without a function name."
+    },
     "function arrow": {
         "prefix": "fnar",
         "body": [
-            "($1) => {",
-            "\t",
+            "() => {",
+            "\t$1",
             "}"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
@@ -614,8 +647,42 @@
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
     },
+    "function arrow with argument": {
+        "prefix": "fnarg",
+        "body": [
+            "($1) => {",
+            "\t",
+            "}"
+        ],
+        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
+    },
+    "function arrow array": {
+        "prefix": "fnari",
+        "body": [
+            "(item) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
+    },
+    "function arrow min item": {
+        "prefix": "fnarmi",
+        "body": [
+            "item => $1"
+        ],
+        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
+    },
+    "function arrow array full": {
+        "prefix": "fnaraf",
+        "body": [
+            "(item, i, arr) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
+    },
     "const function arrow": {
-        "prefix": "confnar",
+        "prefix": "fnarcon",
         "body": [
             "const $1 = () => {",
             "\t",
