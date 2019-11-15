@@ -661,7 +661,7 @@
         "body": [
             "(item) => {",
             "\t$1",
-            "})"
+            "}"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
     },
@@ -677,7 +677,7 @@
         "body": [
             "(item, i, arr) => {",
             "\t$1",
-            "})"
+            "}"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
     },
