@@ -7,9 +7,12 @@
         "url": "https://github.com/Tertiumnon/tertium-js-snippets"
     },
     "icon": "images/logo.png",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "engines": {
         "vscode": "^1.39.0"
+    },
+    "scripts": {
+        "md": "node helpers/get-md-snippet-declarations.js"
     },
     "categories": [
         "Snippets"
