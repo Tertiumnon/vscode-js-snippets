@@ -8,13 +8,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - More JS snippets
 
-## [1.0.4] - 2019-10-20
+## [1.1.0] - 2019-12-26
 
-- Fixed brackets, semicolons, line breaks
+- Added promises
+- Removed semicolons from snippets without strong necessity
+- Minor fixes
 
-## [1.0.1] - 2019-10-20
+## [1.0.1 - 1.0.4]
 
 - Fixed README images
+- Fixed brackets, semicolons, line breaks
 - Changed filter declaration (".film")
 
 ## [1.0.0] - 2019-10-20
