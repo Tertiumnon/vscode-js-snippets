@@ -16,19 +16,21 @@ Collection of JavaScript snippets for your productivity.
 
 ```text
 .ac -> .appendChild($1)
-.ae -> .addEventListener('$1', );
-.aeb -> .addEventListener('blur', $1);
-.aec -> .addEventListener('click', $1);
-.aech -> .addEventListener('change', $1);
-.aef -> .addEventListener('focus', $1);
-.aefo -> .addEventListener('focusout', $1);
-.aei -> .addEventListener('input', $1);
-.aekd -> .addEventListener('keydown', $1);
-.aemo -> .addEventListener('mouseout', $1);
-.aemov -> .addEventListener('mouseover', $1);
-.apply -> .apply($1)
-.bind -> .bind($1)
-.call -> .call($1)
+.ae -> .addEventListener('$1', )
+.aeb -> .addEventListener('blur', $1)
+.aec -> .addEventListener('click', $1)
+.aech -> .addEventListener('change', $1)
+.aef -> .addEventListener('focus', $1)
+.aefo -> .addEventListener('focusout', $1)
+.aei -> .addEventListener('input', $1)
+.aekd -> .addEventListener('keydown', $1)
+.aemo -> .addEventListener('mouseout', $1)
+.aemov -> .addEventListener('mouseover', $1)
+.ap -> .apply($1)
+.bi -> .bind($1)
+.ca -> .call($1)
+.cat -> .catch((error) => { $1 })
+.catm -> .catch(error => $1)
 .ci -> .clearInterval($1)
 .cl -> .classList
 .cla -> .classList.add('$1')
@@ -41,11 +43,14 @@ Collection of JavaScript snippets for your productivity.
 .cont -> .contains($1)
 .ct -> .clearTimeout($1)
 .de -> .dispatchEvent($1)
-.eve -> .every((item, i, arr) => { $1 })
+.eve -> .every((item) => { $1 })
+.evef -> .every((item, i) => { $1 })
 .evem -> .every(item => $1)
-.fil -> .filter((item, i, arr) => { $1 })
+.fil -> .filter((item) => { $1 })
+.filf -> .filter((item, i) => { $1 })
 .film -> .filter(item => $1)
-.fore -> .forEach((item, i, arr) => { $1 })
+.fore -> .forEach((item) => { $1 })
+.foref -> .forEach((item, i) => { $1 })
 .forem -> .forEach(item => $1)
 .fro -> .from($1)
 .ga -> .getAttribute('$1')
@@ -57,68 +62,70 @@ Collection of JavaScript snippets for your productivity.
 .ih -> .innerHTML
 .ihs -> .innerHTML = '$1'
 .isa -> .isArray($1)
-.map -> .map((item, i, arr) => { $1 })
+.map -> .map((item) => { $1 })
+.mapf -> .map((item, i) => { $1 })
 .mapm -> .map(item => $1)
 .oh -> .outerHTML
 .ohs -> .outerHTML = '$1'
 .pe -> .parentElement
 .pn -> .parentNode
-.proto -> .prototype
+.prot -> .prototype
 .qs -> .querySelector('$1')
 .qsa -> .querySelectorAll('$1')
 .ra -> .removeAttribute('$1')
 .rc -> .replaceChild($1, )
-.re -> .removeEventListener('$1', );
+.re -> .removeEventListener('$1', )
 .rmc -> .removeChild($1)
 .sa -> .setAttribute('$1', '')
-.si -> .setInterval(() => { $1 }, 3000);
+.si -> .setInterval(() => { $1 }, 3000)
 .sim -> .setInterval(() => {$1}, 3000)
-.st -> .setTimeout(() => { $1 }, 3000);
+.st -> .setTimeout(() => { $1 }, 3000)
 .stm -> .setTimeout(() => {$1}, 3000)
 .tc -> .textContent
 .tcs -> .textContent = '$1'
-alert -> alert('$1');
-cd -> console.dir($1);
-cdm -> console.dir($1)
-ce -> console.error($1);
+.then -> .then((res) => { $1 })
+.thenf -> .then((res) => { $1 }) .catch(error => console.log(error))
+.thenm -> .then(res => $1)
+ale -> alert('$1')
+cd -> console.dir($1)
+ce -> console.error($1)
 cel -> const $1 = document.createElement('$1');
-cem -> console.error($1)
-ci -> console.info($1);
-cim -> console.info($1)
-cl -> console.log($1);
+ci -> console.info($1)
+cl -> console.log($1)
 cla -> class $1 { constructor(props) {} }
 clae -> export class $1 { constructor(props) {} }
 claed -> export default class $1 { constructor(props) {} }
-clm -> console.log($1)
-confirm -> confirm('$1');
-cw -> console.warn($1);
-cwm -> console.warn($1)
+con -> confirm('$1')
+cw -> console.warn($1)
 de -> debugger;
 do -> do { $1 } while ();
 doc -> document
 fn -> function $1() {  }
 fna -> function() { $1 }
 fnar -> () => { $1 }
-fnaraf -> (item, i, arr) => { $1 })
+fnaraf -> (item, i, arr) => { $1 }
 fnarcon -> const $1 = () => {  };
 fnarg -> ($1) => {  }
-fnari -> (item) => { $1 })
+fnari -> (item) => { $1 }
 fnarm -> () => { $1 }
 fnarmi -> item => $1
-for -> const l = arr.length; for (let $1 = 0; $1 < l; $1 += 1) { const item = arr[$1]; }
+for -> for (let $1 = 0; $1 < items.length; $1 += 1) {  }
+for -> for (let $1 = 0; $1 < items.length; $1 += 1) { const item = arr[$1]; }
+forf -> const len = items.length; for (let $1 = 0; $1 < len; $1 += 1) { const item = arr[$1]; }
 forin -> for (const prop in $1) {  }
-form -> for (let $1 = 0; $1 < l; $1 += 1) {  }
 forof -> for (const item of $1) {  }
 iife -> (function() { $1 })();
-imp -> import  from '$1';
-impm -> import {  } from '$1';
+imp -> import {  } from '$1';
+impm -> import  from '$1';
 jsonp -> JSON.parse($1)
 jsons -> JSON.stringify($1)
 map -> new Map($1)
 obje -> Object.entries($1)
 objk -> Object.keys($1)
 objv -> Object.values($1)
-prompt -> prompt('$1');
+pro -> prompt('$1')
+prom -> new Promise((resolve, reject)) { resolve($1) }
+proma -> Promise.all($1)
 set -> new Set($1)
 sw -> switch ($1) { case '':            break;  default: }
 us -> 'use strict';

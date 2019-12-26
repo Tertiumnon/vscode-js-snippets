@@ -7,7 +7,7 @@
         "url": "https://github.com/Tertiumnon/tertium-js-snippets"
     },
     "icon": "images/logo.png",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "engines": {
         "vscode": "^1.39.0"
     },
