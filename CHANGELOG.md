@@ -8,6 +8,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - More JS snippets
 
+## [1.2.0] - 2020-02-08
+
+- Added some new functions
+- Replace "min/standart/full" principe for arrow functions
+- Minor fixes
+
 ## [1.1.0] - 2019-12-26
 
 - Added promises

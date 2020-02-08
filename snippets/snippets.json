@@ -299,6 +299,27 @@
         ],
         "description": "The textContent property of the Node interface represents the text content of the node and its descendants."
     },
+    "Number.parseFloat": {
+        "prefix": "numpf",
+        "body": [
+            "Number.parseFloat($1)"
+        ],
+        "description": "The Number.parseFloat() method parses a string argument and returns a floating point number."
+    },
+    "Number.parseInt": {
+        "prefix": "numpi",
+        "body": [
+            "Number.parseInt($1)"
+        ],
+        "description": "The Number.parseInt() method parses a string argument and returns an integer of the specified radix or base."
+    },
+    "Number.prototype.toFixed": {
+        "prefix": ".tof",
+        "body": [
+            ".toFixed($1)"
+        ],
+        "description": "The toFixed() method formats a number using fixed-point notation."
+    },
     "Node.textContent set": {
         "prefix": ".tcs",
         "body": [
@@ -386,9 +407,9 @@
     "Promise": {
         "prefix": "prom",
         "body": [
-            "new Promise((resolve, reject)) {",
+            "new Promise((resolve, reject) => {",
             "\tresolve($1)",
-            "}"
+            "})"
         ],
         "description": "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value."
     },
@@ -402,14 +423,14 @@
     "Promise.prototype.then min": {
         "prefix": ".thenm",
         "body": [
-            ".then(res => $1)"
+            ".then(result => $1)"
         ],
         "description": "The then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise."
     },
     "Promise.prototype.then": {
         "prefix": ".then",
         "body": [
-            ".then((res) => {",
+            ".then((result) => {",
             "\t$1",
             "})"
         ],
@@ -418,7 +439,7 @@
     "Promise.prototype.then full": {
         "prefix": ".thenf",
         "body": [
-            ".then((res) => {",
+            ".then((result) => {",
             "\t$1",
             "})",
             ".catch(error => console.log(error))"
@@ -516,8 +537,8 @@
     "Array.prototype.map full": {
         "prefix": ".mapf",
         "body": [
-            ".map((item, i) => {",
-            "\t$1",
+            ".map(($1) => {",
+            "\t",
             "})"
         ],
         "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
@@ -541,8 +562,8 @@
     "Array.prototype.every full": {
         "prefix": ".evef",
         "body": [
-            ".every((item, i) => {",
-            "\t$1",
+            ".every(($1) => {",
+            "\t",
             "})"
         ],
         "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."
@@ -566,8 +587,8 @@
     "Array.prototype.filter full": {
         "prefix": ".filf",
         "body": [
-            ".filter((item, i) => {",
-            "\t$1",
+            ".filter(($1) => {",
+            "\t",
             "})"
         ],
         "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
@@ -591,26 +612,17 @@
     "Array.prototype.forEach full": {
         "prefix": ".foref",
         "body": [
-            ".forEach((item, i) => {",
-            "\t$1",
+            ".forEach(($1) => {",
+            "\t",
             "})"
         ],
         "description": "The forEach() method executes a provided function once for each array element."
-    },
-    "for min": {
-        "prefix": "for",
-        "body": [
-            "for (let $1 = 0; $1 < items.length; $1 += 1) {",
-            "\t",
-            "}"
-        ],
-        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
     },
     "for": {
         "prefix": "for",
         "body": [
             "for (let $1 = 0; $1 < items.length; $1 += 1) {",
-            "\tconst item = arr[$1];",
+            "\tconst item = items[$1];",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
@@ -618,9 +630,9 @@
     "for full": {
         "prefix": "forf",
         "body": [
-            "const len = items.length;",
-            "for (let $1 = 0; $1 < len; $1 += 1) {",
-            "\tconst item = arr[$1];",
+            "const itemsLen = items.length;",
+            "for (let $1 = 0; $1 < itemsLen; $1 += 1) {",
+            "\tconst item = items[$1];",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
@@ -699,33 +711,15 @@
         ],
         "description": "An anonymous function is a function without a function name."
     },
-    "function arrow": {
-        "prefix": "fnar",
-        "body": [
-            "() => {",
-            "\t$1",
-            "}"
-        ],
-        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
-    },
     "function arrow min": {
         "prefix": "fnarm",
         "body": [
-            "() => { $1 }"
+            "item => $1"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
     },
-    "function arrow with argument": {
-        "prefix": "fnarg",
-        "body": [
-            "($1) => {",
-            "\t",
-            "}"
-        ],
-        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
-    },
-    "function arrow array": {
-        "prefix": "fnari",
+    "function arrow": {
+        "prefix": "fnar",
         "body": [
             "(item) => {",
             "\t$1",
@@ -733,10 +727,12 @@
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
     },
-    "function arrow min item": {
-        "prefix": "fnarmi",
+    "function arrow with argument": {
+        "prefix": "fnarf",
         "body": [
-            "item => $1"
+            "($1) => {",
+            "\t",
+            "}"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
     },
