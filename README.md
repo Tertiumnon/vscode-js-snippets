@@ -44,13 +44,13 @@ Collection of JavaScript snippets for your productivity.
 .ct -> .clearTimeout($1)
 .de -> .dispatchEvent($1)
 .eve -> .every((item) => { $1 })
-.evef -> .every((item, i) => { $1 })
+.evef -> .every(($1) => {  })
 .evem -> .every(item => $1)
 .fil -> .filter((item) => { $1 })
-.filf -> .filter((item, i) => { $1 })
+.filf -> .filter(($1) => {  })
 .film -> .filter(item => $1)
 .fore -> .forEach((item) => { $1 })
-.foref -> .forEach((item, i) => { $1 })
+.foref -> .forEach(($1) => {  })
 .forem -> .forEach(item => $1)
 .fro -> .from($1)
 .ga -> .getAttribute('$1')
@@ -63,7 +63,7 @@ Collection of JavaScript snippets for your productivity.
 .ihs -> .innerHTML = '$1'
 .isa -> .isArray($1)
 .map -> .map((item) => { $1 })
-.mapf -> .map((item, i) => { $1 })
+.mapf -> .map(($1) => {  })
 .mapm -> .map(item => $1)
 .oh -> .outerHTML
 .ohs -> .outerHTML = '$1'
@@ -83,9 +83,10 @@ Collection of JavaScript snippets for your productivity.
 .stm -> .setTimeout(() => {$1}, 3000)
 .tc -> .textContent
 .tcs -> .textContent = '$1'
-.then -> .then((res) => { $1 })
-.thenf -> .then((res) => { $1 }) .catch(error => console.log(error))
-.thenm -> .then(res => $1)
+.then -> .then((result) => { $1 })
+.thenf -> .then((result) => { $1 }) .catch(error => console.log(error))
+.thenm -> .then(result => $1)
+.tof -> .toFixed($1)
 ale -> alert('$1')
 cd -> console.dir($1)
 ce -> console.error($1)
@@ -102,16 +103,13 @@ do -> do { $1 } while ();
 doc -> document
 fn -> function $1() {  }
 fna -> function() { $1 }
-fnar -> () => { $1 }
+fnar -> (item) => { $1 }
 fnaraf -> (item, i, arr) => { $1 }
 fnarcon -> const $1 = () => {  };
-fnarg -> ($1) => {  }
-fnari -> (item) => { $1 }
-fnarm -> () => { $1 }
-fnarmi -> item => $1
-for -> for (let $1 = 0; $1 < items.length; $1 += 1) {  }
-for -> for (let $1 = 0; $1 < items.length; $1 += 1) { const item = arr[$1]; }
-forf -> const len = items.length; for (let $1 = 0; $1 < len; $1 += 1) { const item = arr[$1]; }
+fnarf -> ($1) => {  }
+fnarm -> item => $1
+for -> for (let $1 = 0; $1 < items.length; $1 += 1) { const item = items[$1]; }
+forf -> const itemsLen = items.length; for (let $1 = 0; $1 < itemsLen; $1 += 1) { const item = items[$1]; }
 forin -> for (const prop in $1) {  }
 forof -> for (const item of $1) {  }
 iife -> (function() { $1 })();
@@ -120,11 +118,13 @@ impm -> import  from '$1';
 jsonp -> JSON.parse($1)
 jsons -> JSON.stringify($1)
 map -> new Map($1)
+numpf -> Number.parseFloat($1)
+numpi -> Number.parseInt($1)
 obje -> Object.entries($1)
 objk -> Object.keys($1)
 objv -> Object.values($1)
 pro -> prompt('$1')
-prom -> new Promise((resolve, reject)) { resolve($1) }
+prom -> new Promise((resolve, reject) => { resolve($1) })
 proma -> Promise.all($1)
 set -> new Set($1)
 sw -> switch ($1) { case '':            break;  default: }
