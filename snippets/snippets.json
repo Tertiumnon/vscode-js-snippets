@@ -476,72 +476,68 @@
         ],
         "description": "The static import statement is used to import bindings which are exported by another module."
     },
-    "Array.isArray": {
-        "prefix": ".isa",
-        "body": [
-            ".isArray($1)"
-        ],
-        "description": "The Array.isArray() method determines whether the passed value is an Array."
-    },
-    "Array.from": {
-        "prefix": ".fro",
-        "body": [
-            ".from($1)"
-        ],
-        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object."
-    },
-    "Array.prototype.concat": {
-        "prefix": ".con",
-        "body": [
-            ".concat($1)"
-        ],
-        "description": "The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array."
-    },
-    "Array.prototype.entries": {
-        "prefix": "obje",
-        "body": [
-            "Object.entries($1)"
-        ],
-        "description": "The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array."
-    },
-    "Array.prototype.keys": {
+    "Object.prototype.keys": {
         "prefix": "objk",
         "body": [
             "Object.keys($1)"
         ],
         "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array."
     },
-    "Array.prototype.values": {
+    "Object.prototype.values": {
         "prefix": "objv",
         "body": [
             "Object.values($1)"
         ],
         "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array."
     },
-    "Array.prototype.map min": {
-        "prefix": ".mapm",
+    "Object.prototype.entries": {
+        "prefix": "obje",
         "body": [
-            ".map(item => $1)"
+            "Object.entries($1)"
         ],
-        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop."
     },
-    "Array.prototype.map": {
-        "prefix": ".map",
+    "Array.isArray": {
+        "prefix": "aria",
         "body": [
-            ".map((item) => {",
-            "\t$1",
-            "})"
+            "Array.isArray($1)"
         ],
-        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+        "description": "The Array.isArray() method determines whether the passed value is an Array."
     },
-    "Array.prototype.map full": {
-        "prefix": ".mapf",
+    "Array.from": {
+        "prefix": "arf",
         "body": [
-            ".map(($1) => {",
-            "\t",
-            "})"
+            "Array.from($1)"
         ],
-        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object."
+    },
+    "Array.of": {
+        "prefix": "aro",
+        "body": [
+            "Array.of($1)"
+        ],
+        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object."
+    },
+    "Array.prototype.concat": {
+        "prefix": ".conc",
+        "body": [
+            ".concat($1)"
+        ],
+        "description": "The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array."
+    },
+    "Array.prototype.copyWithin": {
+        "prefix": ".copw",
+        "body": [
+            ".copyWithin($1)"
+        ],
+        "description": "The copyWithin() method shallow copies part of an array to another location in the same array and returns it without modifying its length."
+    },
+    "Array.prototype.entries": {
+        "prefix": ".ent",
+        "body": [
+            ".entries($1)"
+        ],
+        "description": "The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array."
     },
     "Array.prototype.every min": {
         "prefix": ".evem",
@@ -563,10 +559,17 @@
         "prefix": ".evef",
         "body": [
             ".every(($1) => {",
-            "\t",
+            "\treturn $1;",
             "})"
         ],
         "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."
+    },
+    "Array.prototype.fill": {
+        "prefix": ".fil",
+        "body": [
+            ".fill($1)"
+        ],
+        "description": "The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). It returns the modified array."
     },
     "Array.prototype.filter min": {
         "prefix": ".film",
@@ -588,10 +591,60 @@
         "prefix": ".filf",
         "body": [
             ".filter(($1) => {",
-            "\t",
+            "\treturn $1;",
             "})"
         ],
         "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
+    },
+    "Array.prototype.find min": {
+        "prefix": ".finm",
+        "body": [
+            ".find(item => $1)"
+        ],
+        "description": "The find() method returns the value of the first element in the provided array that satisfies the provided testing function."
+    },
+    "Array.prototype.find": {
+        "prefix": ".fin",
+        "body": [
+            ".find((item) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "The find() method returns the value of the first element in the provided array that satisfies the provided testing function."
+    },
+    "Array.prototype.find full": {
+        "prefix": ".finf",
+        "body": [
+            ".find(($1) => {",
+            "\treturn $1;",
+            "})"
+        ],
+        "description": "The find() method returns the value of the first element in the provided array that satisfies the provided testing function."
+    },
+    "Array.prototype.findIndex min": {
+        "prefix": ".finim",
+        "body": [
+            ".findIndex(item => $1)"
+        ],
+        "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."
+    },
+    "Array.prototype.findIndex": {
+        "prefix": ".fini",
+        "body": [
+            ".findIndex((item) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."
+    },
+    "Array.prototype.findIndex full": {
+        "prefix": ".finif",
+        "body": [
+            ".findIndex(($1) => {",
+            "\treturn $1;",
+            "})"
+        ],
+        "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."
     },
     "Array.prototype.forEach min": {
         "prefix": ".forem",
@@ -617,6 +670,242 @@
             "})"
         ],
         "description": "The forEach() method executes a provided function once for each array element."
+    },
+    "Array.prototype.includes": {
+        "prefix": ".inc",
+        "body": [
+            ".includes($1)"
+        ],
+        "description": "The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate."
+    },
+    "Array.prototype.indexOf": {
+        "prefix": ".ino",
+        "body": [
+            ".indexOf($1)"
+        ],
+        "description": "The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present."
+    },
+    "Array.prototype.join": {
+        "prefix": ".joi",
+        "body": [
+            ".join($1)"
+        ],
+        "description": "The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator."
+    },
+    "Array.prototype.keys": {
+        "prefix": ".key",
+        "body": [
+            ".keys($1)"
+        ],
+        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array."
+    },
+    "Array.prototype.lastIndexOf": {
+        "prefix": ".lio",
+        "body": [
+            ".lastIndexOf($1)"
+        ],
+        "description": "The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex."
+    },
+    "Array.prototype.map min": {
+        "prefix": ".mapm",
+        "body": [
+            ".map(item => $1)"
+        ],
+        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+    },
+    "Array.prototype.map": {
+        "prefix": ".map",
+        "body": [
+            ".map((item) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+    },
+    "Array.prototype.map full": {
+        "prefix": ".mapf",
+        "body": [
+            ".map(($1) => {",
+            "\treturn $1;",
+            "})"
+        ],
+        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+    },
+    "Array.prototype.pop": {
+        "prefix": ".pop",
+        "body": [
+            ".pop()"
+        ],
+        "description": "The pop() method removes the last element from an array and returns that element. This method changes the length of the array."
+    },
+    "Array.prototype.push": {
+        "prefix": ".pus",
+        "body": [
+            ".push($1)"
+        ],
+        "description": "The push() method adds zero or more elements to the end of an array and returns the new length of the array."
+    },
+    "Array.prototype.reduce min": {
+        "prefix": ".redm",
+        "body": [
+            ".reduce((acc, curVal) => $1)"
+        ],
+        "description": "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value."
+    },
+    "Array.prototype.reduce": {
+        "prefix": ".red",
+        "body": [
+            ".reduce((acc, curVal) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value."
+    },
+    "Array.prototype.reduce full": {
+        "prefix": ".redf",
+        "body": [
+            ".reduce((acc, curVal) => {",
+            "\treturn $1;",
+            "})"
+        ],
+        "description": "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value."
+    },
+    "Array.prototype.reduceRight min": {
+        "prefix": ".redrm",
+        "body": [
+            ".reduceRight((acc, curVal) => $1)"
+        ],
+        "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value."
+    },
+    "Array.prototype.reduceRight": {
+        "prefix": ".redr",
+        "body": [
+            ".reduceRight((acc, curVal) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value."
+    },
+    "Array.prototype.reduceRight full": {
+        "prefix": ".redrf",
+        "body": [
+            ".reduceRight((acc, curVal) => {",
+            "\treturn $1;",
+            "})"
+        ],
+        "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value."
+    },
+    "Array.prototype.reverse": {
+        "prefix": ".rev",
+        "body": [
+            ".reverse()"
+        ],
+        "description": "The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first."
+    },
+    "Array.prototype.shift": {
+        "prefix": ".shi",
+        "body": [
+            ".shift()"
+        ],
+        "description": "The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array."
+    },
+    "Array.prototype.slice": {
+        "prefix": ".sli",
+        "body": [
+            ".slice()"
+        ],
+        "description": "The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified."
+    },
+    "Array.prototype.some min": {
+        "prefix": ".somm",
+        "body": [
+            ".some(item => $1)"
+        ],
+        "description": "The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value."
+    },
+    "Array.prototype.some": {
+        "prefix": ".som",
+        "body": [
+            ".some((item) => {",
+            "\treturn $1;",
+            "})"
+        ],
+        "description": "The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value."
+    },
+    "Array.prototype.some full": {
+        "prefix": ".somf",
+        "body": [
+            ".some(($1) => {",
+            "\treturn $1;",
+            "})"
+        ],
+        "description": "The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value."
+    },
+    "Array.prototype.sort min": {
+        "prefix": ".sorm",
+        "body": [
+            ".sort()"
+        ],
+        "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values."
+    },
+    "Array.prototype.sort": {
+        "prefix": ".sor",
+        "body": [
+            ".sort((a, b) => {",
+            "\t$1",
+            "})"
+        ],
+        "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values."
+    },
+    "Array.prototype.sort full": {
+        "prefix": ".sorf",
+        "body": [
+            ".sort((a, b) => {",
+            "\tif ($1) {",
+            "\t\treturn -1;",
+            "\t}",
+            "\tif () {",
+            "\t\treturn 1;",
+            "\t}",
+            "\treturn 0;",
+            "})"
+        ],
+        "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values."
+    },
+    "Array.prototype.splice": {
+        "prefix": ".spl",
+        "body": [
+            ".splice($1)"
+        ],
+        "description": "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place."
+    },
+    "Array.prototype.toLocaleString": {
+        "prefix": ".tls",
+        "body": [
+            ".toLocaleString($1)"
+        ],
+        "description": "The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma “,”)."
+    },
+    "Array.prototype.toString": {
+        "prefix": ".tos",
+        "body": [
+            ".toString($1)"
+        ],
+        "description": "The toString() method returns a string representing the specified array and its elements."
+    },
+    "Array.prototype.unshift": {
+        "prefix": ".uns",
+        "body": [
+            ".unshift($1)"
+        ],
+        "description": "The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array."
+    },
+    "Array.prototype.values": {
+        "prefix": ".vals",
+        "body": [
+            ".values($1)"
+        ],
+        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array."
     },
     "for": {
         "prefix": "for",

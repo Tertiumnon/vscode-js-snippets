@@ -1,15 +1,24 @@
 const fs = require('fs');
 
-let res = '';
-
 let rawData = fs.readFileSync('snippets/snippets.json');
 let data = JSON.parse(rawData);
 
+const res = [];
 for (const prop in data) {
   if (data.hasOwnProperty(prop)) {
     const el = data[prop];
-    res += `${el.prefix} -> ${(el.body.join(' ')).replace(/\t/, '')}\n`;
+    res.push(
+      `${el.prefix} -> ${el.body
+        .join(' ')
+        .replace(/\t/, '')
+        .replace(/\s{2,}/g, ' ')}`
+    );
   }
 }
 
-console.log(res);
+fs.writeFile('snippets.txt', res.sort().join('\n'), (err) => {
+  if (err) {
+    return console.log(err);
+  }
+  console.log('snippets.txt saved');
+});
