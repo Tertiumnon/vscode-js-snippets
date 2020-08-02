@@ -8,6 +8,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - More JS snippets
 
+## [1.3.0] - 2020-07-02
+
+- Added all array methods
+
 ## [1.2.0] - 2020-02-08
 
 - Added some new functions
