@@ -910,18 +910,37 @@
     "for": {
         "prefix": "for",
         "body": [
-            "for (let $1 = 0; $1 < items.length; $1 += 1) {",
-            "\tconst item = items[$1];",
+            "for (let i = 0; i < len; i += 1) {",
+            "\tconst item = $1[i];",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
     },
     "for full": {
-        "prefix": "forf",
+        "prefix": "for",
         "body": [
-            "const itemsLen = items.length;",
-            "for (let $1 = 0; $1 < itemsLen; $1 += 1) {",
-            "\tconst item = items[$1];",
+            "const len = $1.length;",
+            "for (let i = 0; i < len; i += 1) {",
+            "\tconst item = $1[i];",
+            "}"
+        ],
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
+    },
+    "for reverse": {
+        "prefix": "forr",
+        "body": [
+            "for (let j = len - 1; j >= 0; j -= 1) {",
+            "\tconst rItem = $1[j];",
+            "}"
+        ],
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
+    },
+    "for reverse full": {
+        "prefix": "forrf",
+        "body": [
+            "const len = $1.length;",
+            "for (let j = len - 1; j >= 0; j -= 1) {",
+            "\tconst item = $1[j];",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
@@ -945,7 +964,7 @@
         "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables."
     },
     "while": {
-        "prefix": "while",
+        "prefix": "wh",
         "body": [
             "while ($1) {",
             "\t",

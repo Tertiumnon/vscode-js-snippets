@@ -145,10 +145,12 @@ fnaraf -> (item, i, arr) => { $1 }
 fnarcon -> const $1 = () => { };
 fnarf -> ($1) => { }
 fnarm -> item => $1
-for -> for (let $1 = 0; $1 < items.length; $1 += 1) { const item = items[$1]; }
-forf -> const itemsLen = items.length; for (let $1 = 0; $1 < itemsLen; $1 += 1) { const item = items[$1]; }
+for -> const len = $1.length; for (let i = 0; i < len; i += 1) { const item = $1[i]; }
+for -> for (let i = 0; i < len; i += 1) { const item = $1[i]; }
 forin -> for (const prop in $1) { }
 forof -> for (const item of $1) { }
+forr -> for (let j = len - 1; j >= 0; j -= 1) { const rItem = $1[j]; }
+forrf -> const len = $1.length; for (let j = len - 1; j >= 0; j -= 1) { const item = $1[j]; }
 iife -> (function() { $1 })();
 imp -> import { } from '$1';
 impm -> import from '$1';
@@ -166,5 +168,5 @@ proma -> Promise.all($1)
 set -> new Set($1)
 sw -> switch ($1) { case '': break; default: }
 us -> 'use strict';
-while -> while ($1) { }
+wh -> while ($1) { }
 ```
