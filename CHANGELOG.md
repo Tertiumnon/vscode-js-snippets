@@ -8,6 +8,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - More JS snippets
 
+## [1.5] - 2021-05-15
+
+- Removed unnessecary methods
+- Changed some methods
+
 ## [1.4] - 2021-03-21
 
 - Changed for methods
