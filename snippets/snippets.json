@@ -792,7 +792,7 @@
         "body": [
             "const len = $1.length;",
             "for (let i = 0; i < len; i += 1) {",
-            "\tconst item = $1[i];",
+            "\tconst $1Item = $1[i];",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
@@ -800,8 +800,8 @@
     "for min": {
         "prefix": "form",
         "body": [
-            "for (let y = 0; i < $1Len; y += 1) {",
-            "\tconst item = $1[y];",
+            "for (let j = 0; j < $1Len; j += 1) {",
+            "\tconst $1Item = $1[j];",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
@@ -810,7 +810,7 @@
         "prefix": "forr",
         "body": [
             "for (let r = $1Len - 1; r >= 0; r -= 1) {",
-            "\tconst rItem = $1[r];",
+            "\tconst $1Item = $1[r];",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
