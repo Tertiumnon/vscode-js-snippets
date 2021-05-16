@@ -8,28 +8,36 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - More JS snippets
 
-## [1.3.0] - 2020-07-02
+## [1.6] - 2021-05-15
+
+- Removed unnessecary methods
+- Changed some methods
+
+## [1.5] - 2021-05-15
+
+- Removed unnessecary methods
+- Changed some methods
+
+## [1.4] - 2021-03-21
+
+- Changed for methods
+
+## [1.3] - 2020-07-02
 
 - Added all array methods
 
-## [1.2.0] - 2020-02-08
+## [1.2] - 2020-02-08
 
 - Added some new functions
 - Replace "min/standart/full" principe for arrow functions
 - Minor fixes
 
-## [1.1.0] - 2019-12-26
+## [1.1] - 2019-12-26
 
 - Added promises
 - Removed semicolons from snippets without strong necessity
 - Minor fixes
 
-## [1.0.1 - 1.0.4]
-
-- Fixed README images
-- Fixed brackets, semicolons, line breaks
-- Changed filter declaration (".film")
-
-## [1.0.0] - 2019-10-20
+## [1.0] - 2019-10-20
 
 - Initial release
