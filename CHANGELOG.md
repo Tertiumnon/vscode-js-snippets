@@ -8,6 +8,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - More JS snippets
 
+## [1.7] - 2021-05-15
+
+- Change switch default break
+
 ## [1.6] - 2021-05-15
 
 - Removed unnessecary methods
