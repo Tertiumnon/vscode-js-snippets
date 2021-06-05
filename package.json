@@ -13,7 +13,8 @@
     },
     "scripts": {
         "commit": "npx cz",
-        "md": "node helpers/get-md-snippet-declarations.js"
+        "md": "node helpers/get-md-snippet-declarations.js",
+        "publish": "vsce package && vsce publish"
     },
     "categories": [
         "Snippets"
