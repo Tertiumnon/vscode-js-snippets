@@ -12,6 +12,7 @@
         "vscode": "^1.39.0"
     },
     "scripts": {
+        "commit": "npx cz",
         "md": "node helpers/get-md-snippet-declarations.js"
     },
     "categories": [
