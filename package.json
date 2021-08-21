@@ -12,8 +12,13 @@
         "vscode": "^1.39.0"
     },
     "scripts": {
-        "commit": "npx cz",
+        "git:add:all": "git add --all",
+        "commit": "cz",
+        "commit:all": "npm run git:add:all && npm run commit",
         "md": "node helpers/get-md-snippet-declarations.js",
+        "release:major": "changelog -M && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version major && git push origin && git push origin --tags",
+        "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version minor && git push origin && git push origin --tags",
+        "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m \"updated CHANGELOG.md\" && npm version patch && git push origin && git push origin --tags",
         "publish": "vsce package && vsce publish && rm *.vsix"
     },
     "categories": [
@@ -41,7 +46,8 @@
     },
     "devDependencies": {
         "commitizen": "^4.2.4",
-        "cz-conventional-changelog": "^3.3.0"
+        "cz-conventional-changelog": "^3.3.0",
+        "generate-changelog": "^1.8.0"
     },
     "config": {
         "commitizen": {
