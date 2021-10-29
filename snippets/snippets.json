@@ -1,746 +1,212 @@
 {
-    "Console.dir": {
-        "prefix": "cd",
+    "anonymous function": {
         "body": [
-            "console.dir($1);"
-        ],
-        "description": "The Console method dir() displays an interactive list of the properties of the specified JavaScript object."
-    },
-    "Console.error": {
-        "prefix": "ce",
-        "body": [
-            "console.error($1);"
-        ],
-        "description": "Outputs an error message to the Web Console."
-    },
-    "Console.info": {
-        "prefix": "ci",
-        "body": [
-            "console.info($1);"
-        ],
-        "description": "Outputs an informational message to the Web Console. Only in Firefox, a small \"i\" icon is displayed next to these items in the Web Console's log."
-    },
-    "Console.log": {
-        "prefix": "cl",
-        "body": [
-            "console.log($1);"
-        ],
-        "description": "The Console method log() outputs a message to the web console."
-    },
-    "Console.warn": {
-        "prefix": "cw",
-        "body": [
-            "console.warn($1);"
-        ],
-        "description": "Outputs a warning message to the Web Console."
-    },
-    "debugger": {
-        "prefix": "deb",
-        "body": [
-            "debugger;"
-        ],
-        "description": "The debugger statement invokes any available debugging functionality, such as setting a breakpoint."
-    },
-    "document": {
-        "prefix": "doc",
-        "body": [
-            "document"
-        ],
-        "description": "document"
-    },
-    "EventTarget.addEventListener": {
-        "prefix": ".ae",
-        "body": [
-            ".addEventListener('$1', );"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.removeEventListener": {
-        "prefix": ".reme",
-        "body": [
-            ".removeEventListener('$1', );"
-        ],
-        "description": "The EventTarget.removeEventListener() method removes from the EventTarget an event listener previously registered with EventTarget.addEventListener()."
-    },
-    "EventTarget.addEventListener blur": {
-        "prefix": ".aeblu",
-        "body": [
-            ".addEventListener('blur', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.addEventListener click": {
-        "prefix": ".aecli",
-        "body": [
-            ".addEventListener('click', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.addEventListener change": {
-        "prefix": ".aecha",
-        "body": [
-            ".addEventListener('change', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.addEventListener focus": {
-        "prefix": ".aefoc",
-        "body": [
-            ".addEventListener('focus', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.addEventListener focusout": {
-        "prefix": ".aefoco",
-        "body": [
-            ".addEventListener('focusout', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.addEventListener input": {
-        "prefix": ".aeinp",
-        "body": [
-            ".addEventListener('input', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.addEventListener keydown": {
-        "prefix": ".aekey",
-        "body": [
-            ".addEventListener('keydown', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.addEventListener mouseover": {
-        "prefix": ".aemou",
-        "body": [
-            ".addEventListener('mouseover', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.addEventListener mouseout": {
-        "prefix": ".aemouo",
-        "body": [
-            ".addEventListener('mouseout', $1);"
-        ],
-        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target."
-    },
-    "EventTarget.dispatchEvent": {
-        "prefix": ".de",
-        "body": [
-            ".dispatchEvent($1);"
-        ],
-        "description": "Dispatches an Event at the specified EventTarget, (synchronously) invoking the affected EventListeners in the appropriate order."
-    },
-    "Node.parentElement": {
-        "prefix": ".pe",
-        "body": [
-            ".parentElement"
-        ],
-        "description": "The Node.parentElement read-only property returns the DOM node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element."
-    },
-    "Node.parentNode": {
-        "prefix": ".pn",
-        "body": [
-            ".parentNode"
-        ],
-        "description": "The Node.parentNode read-only property returns the parent of the specified node in the DOM tree."
-    },
-    "Node.appendChild": {
-        "prefix": ".ac",
-        "body": [
-            ".appendChild($1);"
-        ],
-        "description": "The Node.appendChild() method adds a node to the end of the list of children of a specified parent node."
-    },
-    "Node.insertBefore": {
-        "prefix": ".ib",
-        "body": [
-            ".insertBefore($1);"
-        ],
-        "description": "The Node.insertBefore() method inserts a node before the reference node as a child of a specified parent node."
-    },
-    "Node.cloneNode": {
-        "prefix": ".cn",
-        "body": [
-            ".cloneNode($1);"
-        ],
-        "description": "The Node.cloneNode() method returns a duplicate of the node on which this method was called."
-    },
-    "Node.contains": {
-        "prefix": ".con",
-        "body": [
-            ".contains($1);"
-        ],
-        "description": "The Node.contains() method returns a Boolean value indicating whether a node is a descendant of a given node."
-    },
-    "Node.removeChild": {
-        "prefix": ".remc",
-        "body": [
-            ".removeChild($1);"
-        ],
-        "description": "The Node.removeChild() method removes a child node from the DOM and returns the removed node."
-    },
-    "Node.replaceChild": {
-        "prefix": ".repc",
-        "body": [
-            ".replaceChild($1, );"
-        ],
-        "description": "The Node.replaceChild() method replaces a child node within the given (parent) node."
-    },
-    "Document.createElement": {
-        "prefix": ".cre",
-        "body": [
-            ".createElement('$1');"
-        ],
-        "description": "In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized."
-    },
-    "class": {
-        "prefix": "cla",
-        "body": [
-            "class $1 {",
-            "\tconstructor(props) {}",
-            "}"
-        ],
-        "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
-    },
-    "export class": {
-        "prefix": "expcla",
-        "body": [
-            "export class $1 {",
-            "\tconstructor(props) {}",
-            "}"
-        ],
-        "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
-    },
-    "export default class": {
-        "prefix": "expdefcla",
-        "body": [
-            "export default class $1 {",
-            "\tconstructor(props) {}",
-            "}"
-        ],
-        "description": "The class declaration creates a new class with a given name using prototype-based inheritance."
-    },
-    "Element.classList": {
-        "prefix": ".cl",
-        "body": [
-            ".classList"
-        ],
-        "description": "The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element."
-    },
-    "Element.classList.add": {
-        "prefix": ".cladd",
-        "body": [
-            ".classList.add('$1');"
-        ],
-        "description": "Adds the specified class values. If these classes already exist in the element's class attribute they are ignored."
-    },
-    "Element.classList.contains": {
-        "prefix": ".clcon",
-        "body": [
-            ".classList.contains('$1');"
-        ],
-        "description": "Checks if the specified class value exists in the element's class attribute."
-    },
-    "Element.classList.remove": {
-        "prefix": ".clrem",
-        "body": [
-            ".classList.remove('$1');"
-        ],
-        "description": "Removes the specified class values."
-    },
-    "Element.classList.replace": {
-        "prefix": ".clrep",
-        "body": [
-            ".classList.replace('$1', '');"
-        ],
-        "description": "Replaces an existing class with a new class."
-    },
-    "Element.classList.toggle": {
-        "prefix": ".cltog",
-        "body": [
-            ".classList.toggle('$1');"
-        ],
-        "description": "When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return false, if not, then add it and return true."
-    },
-    "Node.innerHTML": {
-        "prefix": ".innh",
-        "body": [
-            ".innerHTML"
-        ],
-        "description": "The Element property innerHTML gets or sets the HTML or XML markup contained within the element."
-    },
-    "Node.outerHTML": {
-        "prefix": ".outh",
-        "body": [
-            ".outerHTML"
-        ],
-        "description": "The outerHTML attribute of the Element DOM interface gets the serialized HTML fragment describing the element including its descendants."
-    },
-    "Node.textContent": {
-        "prefix": ".tc",
-        "body": [
-            ".textContent"
-        ],
-        "description": "The textContent property of the Node interface represents the text content of the node and its descendants."
-    },
-    "Number.parseFloat": {
-        "prefix": "pf",
-        "body": [
-            "parseFloat($1)"
-        ],
-        "description": "The Number.parseFloat() method parses a string argument and returns a floating point number."
-    },
-    "Number.parseInt": {
-        "prefix": "pi",
-        "body": [
-            "parseInt($1)"
-        ],
-        "description": "The Number.parseInt() method parses a string argument and returns an integer of the specified radix or base."
-    },
-    "Number.toFixed": {
-        "prefix": ".tf",
-        "body": [
-            ".toFixed($1)"
-        ],
-        "description": "The toFixed() method formats a number using fixed-point notation."
-    },
-    "Element.getElementById": {
-        "prefix": ".gebi",
-        "body": [
-            ".getElementById('$1')"
-        ],
-        "description": "The Document method getElementById() returns an Element object representing the element whose id property matches the specified string."
-    },
-    "Element.getElementsByClassName": {
-        "prefix": ".gebc",
-        "body": [
-            ".getElementsByClassName('$1')"
-        ],
-        "description": "The Element method getElementsByClassName() returns a live HTMLCollection which contains every descendant element which has the specified class name or names."
-    },
-    "Element.getElementsByTagName": {
-        "prefix": ".gebt",
-        "body": [
-            ".getElementsByTagName('$1')"
-        ],
-        "description": "The Element.getElementsByTagName() method returns a live HTMLCollection of elements with the given tag name."
-    },
-    "Element.getAttribute": {
-        "prefix": ".ga",
-        "body": [
-            ".getAttribute('$1')"
-        ],
-        "description": "The getAttribute() method of the Element interface returns the value of a specified attribute on the element."
-    },
-    "Element.hasAttribute": {
-        "prefix": ".ha",
-        "body": [
-            ".hasAttribute('$1')"
-        ],
-        "description": "The Element.hasAttribute() method returns a Boolean value indicating whether the specified element has the specified attribute or not."
-    },
-    "Element.setAttribute": {
-        "prefix": ".sa",
-        "body": [
-            ".setAttribute('$1', '')"
-        ],
-        "description": ".setAttribute('<attr: String>', '<val: String>')"
-    },
-    "Element.removeAttribute": {
-        "prefix": ".ra",
-        "body": [
-            ".removeAttribute('$1')"
-        ],
-        "description": "The Element method removeAttribute() removes the attribute with the specified name from the element."
-    },
-    "Element.querySelector": {
-        "prefix": ".qs",
-        "body": [
-            ".querySelector('$1')"
-        ],
-        "description": "The querySelector() method of the Element interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors."
-    },
-    "Element.querySelectorAll": {
-        "prefix": ".qsa",
-        "body": [
-            ".querySelectorAll('$1')"
-        ],
-        "description": "The Element method querySelectorAll() returns a static (not live) NodeList representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called."
-    },
-    "New Set": {
-        "prefix": "news",
-        "body": [
-            "new Set($1)"
-        ],
-        "description": "The Set object lets you store unique values of any type, whether primitive values or object references."
-    },
-    "New Map": {
-        "prefix": "newm",
-        "body": [
-            "new Map($1)"
-        ],
-        "description": "The Map object holds key-value pairs and remembers the original insertion order of the keys."
-    },
-    "New Promise": {
-        "prefix": "newp",
-        "body": [
-            "new Promise((resolve, reject) => {",
-            "\tresolve($1)",
-            "})"
-        ],
-        "description": "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value."
-    },
-    "Promise.all": {
-        "prefix": "pa",
-        "body": [
-            "Promise.all($1)"
-        ],
-        "description": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled or when the iterable contains no promises. It rejects with the reason of the first promise that rejects."
-    },
-    "Promise.prototype.then min": {
-        "prefix": ".them",
-        "body": [
-            ".then($1 => $1);"
-        ],
-        "description": "The then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise."
-    },
-    "Promise.prototype.then": {
-        "prefix": ".thec",
-        "body": [
-            ".then(($1) => {",
+            "function() {",
             "\t$1",
-            "})",
-            ".catch(error => console.log(error));"
+            "}"
         ],
-        "description": "The then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise."
-    },
-    "Promise.prototype.catch min": {
-        "prefix": ".catm",
-        "body": [
-            ".catch(error => console.log(error));"
-        ],
-        "description": "The catch() method returns a Promise and deals with rejected cases only. "
-    },
-    "Promise.prototype.catch": {
-        "prefix": ".cat",
-        "body": [
-            ".catch((error) => {",
-            "\t$1",
-            "});"
-        ],
-        "description": "The catch() method returns a Promise and deals with rejected cases only. "
-    },
-    "Import min": {
-        "prefix": "impp",
-        "body": [
-            "import  from '$1';"
-        ],
-        "description": "The static import statement is used to import bindings which are exported by another module."
-    },
-    "Import": {
-        "prefix": "impps",
-        "body": [
-            "import {  } from '$1';"
-        ],
-        "description": "The static import statement is used to import bindings which are exported by another module."
-    },
-    "Object.prototype.keys": {
-        "prefix": "objk",
-        "body": [
-            "Object.keys($1)"
-        ],
-        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array."
-    },
-    "Object.prototype.values": {
-        "prefix": "objv",
-        "body": [
-            "Object.values($1)"
-        ],
-        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array."
-    },
-    "Object.prototype.entries": {
-        "prefix": "obje",
-        "body": [
-            "Object.entries($1)"
-        ],
-        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop."
-    },
-    "Array.isArray": {
-        "prefix": "arris",
-        "body": [
-            "Array.isArray($1)"
-        ],
-        "description": "The Array.isArray() method determines whether the passed value is an Array."
+        "description": "An anonymous function is a function without a function name.",
+        "prefix": "fun"
     },
     "Array.from": {
-        "prefix": "arrfr",
         "body": [
-            "Array.from($1)"
+            ".from($1)"
         ],
-        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object."
+        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
+        "prefix": ".fro"
+    },
+    "Array.isArray": {
+        "body": [
+            ".isArray($1)"
+        ],
+        "description": "The Array.isArray() method determines whether the passed value is an Array.",
+        "prefix": ".isa"
     },
     "Array.of": {
-        "prefix": "arrof",
         "body": [
-            "Array.of($1)"
+            ".of($1)"
         ],
-        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object."
+        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
+        "prefix": "of"
+    },
+    "Array.prototype": {
+        "body": [
+            "Array"
+        ],
+        "description": "The Array.isArray() method determines whether the passed value is an Array.",
+        "prefix": "arr"
     },
     "Array.prototype.concat": {
-        "prefix": ".con",
         "body": [
             ".concat($1)"
         ],
-        "description": "The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array."
+        "description": "The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.",
+        "prefix": ".con"
     },
     "Array.prototype.copyWithin": {
-        "prefix": ".copw",
         "body": [
             ".copyWithin($1)"
         ],
-        "description": "The copyWithin() method shallow copies part of an array to another location in the same array and returns it without modifying its length."
+        "description": "The copyWithin() method shallow copies part of an array to another location in the same array and returns it without modifying its length.",
+        "prefix": ".cop"
     },
     "Array.prototype.entries": {
-        "prefix": ".ent",
         "body": [
             ".entries($1)"
         ],
-        "description": "The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array."
-    },
-    "Array.prototype.every min": {
-        "prefix": ".evem",
-        "body": [
-            ".every($1 => $1)"
-        ],
-        "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."
+        "description": "The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.",
+        "prefix": ".ent"
     },
     "Array.prototype.every": {
-        "prefix": ".eve",
         "body": [
-            ".every(($1) => {",
-            "\treturn $1;",
-            "})"
+            ".every($1)"
         ],
-        "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."
+        "description": "The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.",
+        "prefix": ".eve"
     },
     "Array.prototype.fill": {
-        "prefix": ".fil",
         "body": [
             ".fill($1)"
         ],
-        "description": "The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). It returns the modified array."
+        "description": "The fill() method changes all elements in an array to a static value, from a start index (default 0) to an end index (default array.length). It returns the modified array.",
+        "prefix": ".fil"
     },
     "Array.prototype.filter": {
-        "prefix": ".filt",
         "body": [
-            ".filter(($1) => {",
-            "\treturn $1;",
-            "});"
+            ".filter($1);"
         ],
-        "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
-    },
-    "Array.prototype.filter min": {
-        "prefix": ".filtm",
-        "body": [
-            ".filter($1 => $1)"
-        ],
-        "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function."
-    },
-    "Array.prototype.find min": {
-        "prefix": ".finm",
-        "body": [
-            ".find($1 => $1)"
-        ],
-        "description": "The find() method returns the value of the first element in the provided array that satisfies the provided testing function."
+        "description": "The filter() method creates a new array with all elements that pass the test implemented by the provided function.",
+        "prefix": ".fil"
     },
     "Array.prototype.find": {
-        "prefix": ".fin",
         "body": [
-            ".find(($1) => {",
-            "\treturn $1;",
-            "});"
+            ".find($1)"
         ],
-        "description": "The find() method returns the value of the first element in the provided array that satisfies the provided testing function."
+        "description": "The find() method returns the value of the first element in the provided array that satisfies the provided testing function.",
+        "prefix": ".fin"
     },
-    "Array.prototype.findIndex min": {
-        "prefix": ".finim",
+    "Array.prototype.findIndex": {
         "body": [
             ".findIndex($1 => $1)"
         ],
-        "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."
-    },
-    "Array.prototype.findIndex": {
-        "prefix": ".fini",
-        "body": [
-            ".findIndex(($1) => {",
-            "\treturn $1;",
-            "});"
-        ],
-        "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."
-    },
-    "Array.prototype.forEach min": {
-        "prefix": ".forem",
-        "body": [
-            ".forEach($1 => $1)"
-        ],
-        "description": "The forEach() method executes a provided function once for each array element."
+        "description": "The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.",
+        "prefix": ".fin"
     },
     "Array.prototype.forEach": {
-        "prefix": ".fore",
         "body": [
-            ".forEach(($1) => {",
-            "\t$1",
-            "})"
+            ".forEach($1)"
         ],
-        "description": "The forEach() method executes a provided function once for each array element."
+        "description": "The forEach() method executes a provided function once for each array element.",
+        "prefix": ".fore"
     },
     "Array.prototype.includes": {
-        "prefix": ".inc",
         "body": [
             ".includes($1)"
         ],
-        "description": "The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate."
+        "description": "The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.",
+        "prefix": ".inc"
     },
     "Array.prototype.indexOf": {
-        "prefix": ".indo",
         "body": [
             ".indexOf($1)"
         ],
-        "description": "The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present."
+        "description": "The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.",
+        "prefix": ".ind"
     },
     "Array.prototype.join": {
-        "prefix": ".joi",
         "body": [
             ".join($1)"
         ],
-        "description": "The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator."
+        "description": "The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.",
+        "prefix": ".joi"
     },
     "Array.prototype.keys": {
-        "prefix": ".key",
         "body": [
             ".keys($1)"
         ],
-        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array."
+        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
+        "prefix": ".key"
     },
     "Array.prototype.lastIndexOf": {
-        "prefix": ".lio",
         "body": [
             ".lastIndexOf($1)"
         ],
-        "description": "The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex."
-    },
-    "Array.prototype.map min": {
-        "prefix": ".mapm",
-        "body": [
-            ".map($1 => $1)"
-        ],
-        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+        "description": "The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.",
+        "prefix": ".las"
     },
     "Array.prototype.map": {
-        "prefix": ".map",
         "body": [
-            ".map(($1) => {",
-            "\treturn $1;",
-            "});"
+            ".map($1)"
         ],
-        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
+        "description": "The map() method creates a new array with the results of calling a provided function on every element in the calling array.",
+        "prefix": ".map"
     },
     "Array.prototype.pop": {
-        "prefix": ".pop",
         "body": [
             ".pop();"
         ],
-        "description": "The pop() method removes the last element from an array and returns that element. This method changes the length of the array."
+        "description": "The pop() method removes the last element from an array and returns that element. This method changes the length of the array.",
+        "prefix": ".pop"
     },
     "Array.prototype.push": {
-        "prefix": ".pus",
         "body": [
             ".push($1);"
         ],
-        "description": "The push() method adds zero or more elements to the end of an array and returns the new length of the array."
-    },
-    "Array.prototype.reduce min": {
-        "prefix": ".redm",
-        "body": [
-            ".reduce(($1, currentValue) => $1 + currentValue)"
-        ],
-        "description": "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value."
+        "description": "The push() method adds zero or more elements to the end of an array and returns the new length of the array.",
+        "prefix": ".pus"
     },
     "Array.prototype.reduce": {
-        "prefix": ".red",
         "body": [
-            ".reduce(($1, currentValue) => {",
-            "\treturn $1 + currentValue;",
-            "});"
+            ".reduce($1)"
         ],
-        "description": "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value."
-    },
-    "Array.prototype.reduceRight min": {
-        "prefix": ".redrm",
-        "body": [
-            ".reduceRight(($1, currentValue) => $1.concat(currentValue))"
-        ],
-        "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value."
+        "description": "The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.",
+        "prefix": ".red"
     },
     "Array.prototype.reduceRight": {
-        "prefix": ".redr",
         "body": [
-            ".reduceRight(($1, currentValue) => {",
-            "\treturn $1.concat(currentValue);",
-            "});"
+            ".reduceRight($1)"
         ],
-        "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value."
+        "description": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.",
+        "prefix": ".red"
     },
     "Array.prototype.reverse": {
-        "prefix": ".rev",
         "body": [
             ".reverse()"
         ],
-        "description": "The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first."
+        "description": "The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.",
+        "prefix": ".rev"
     },
     "Array.prototype.shift": {
-        "prefix": ".shi",
         "body": [
             ".shift()"
         ],
-        "description": "The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array."
+        "description": "The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.",
+        "prefix": ".shi"
     },
     "Array.prototype.slice": {
-        "prefix": ".sli",
         "body": [
             ".slice()"
         ],
-        "description": "The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified."
-    },
-    "Array.prototype.some min": {
-        "prefix": ".somm",
-        "body": [
-            ".some($1 => $1)"
-        ],
-        "description": "The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value."
+        "description": "The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.",
+        "prefix": ".sli"
     },
     "Array.prototype.some": {
-        "prefix": ".som",
         "body": [
-            ".some((item) => {",
-            "\treturn $1;",
-            "});"
+            ".some($1)"
         ],
-        "description": "The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value."
-    },
-    "Array.prototype.sort min": {
-        "prefix": ".sorm",
-        "body": [
-            ".sort((a, b) => a - b)"
-        ],
-        "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values."
+        "description": "The some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.",
+        "prefix": ".som"
     },
     "Array.prototype.sort": {
-        "prefix": ".sor",
         "body": [
-            ".sort((a, b) => {",
+            ".sort($1)"
+        ],
+        "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.",
+        "prefix": ".sor"
+    },
+    "Array.prototype.sort full function": {
+        "body": [
+            "(a, b) => {",
             "\tif ($1) {",
             "\t\treturn -1;",
             "\t}",
@@ -748,120 +214,657 @@
             "\t\treturn 1;",
             "\t}",
             "\treturn 0;",
-            "});"
+            "}"
         ],
-        "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values."
+        "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.",
+        "prefix": ".sorf"
+    },
+    "Array.prototype.sort min function": {
+        "body": [
+            "(a, b) => a - b"
+        ],
+        "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.",
+        "prefix": ".sorm"
     },
     "Array.prototype.splice": {
-        "prefix": ".spl",
         "body": [
             ".splice($1)"
         ],
-        "description": "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place."
+        "description": "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.",
+        "prefix": ".spl"
     },
     "Array.prototype.toLocaleString": {
-        "prefix": ".tls",
         "body": [
             ".toLocaleString($1)"
         ],
-        "description": "The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma “,”)."
+        "description": "The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma “,”).",
+        "prefix": ".tol"
     },
     "Array.prototype.toString": {
-        "prefix": ".ts",
         "body": [
             ".toString($1)"
         ],
-        "description": "The toString() method returns a string representing the specified array and its elements."
+        "description": "The toString() method returns a string representing the specified array and its elements.",
+        "prefix": ".tos"
     },
     "Array.prototype.unshift": {
-        "prefix": ".uns",
         "body": [
             ".unshift($1)"
         ],
-        "description": "The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array."
+        "description": "The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.",
+        "prefix": ".uns"
     },
     "Array.prototype.values": {
-        "prefix": ".val",
         "body": [
             ".values($1)"
         ],
-        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array."
+        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
+        "prefix": ".val"
+    },
+    "class": {
+        "body": [
+            "class $1 {",
+            "\tconstructor(props) {}",
+            "}"
+        ],
+        "description": "The class declaration creates a new class with a given name using prototype-based inheritance.",
+        "prefix": "cla"
+    },
+    "Console.dir": {
+        "body": [
+            "console.dir($1);"
+        ],
+        "description": "The Console method dir() displays an interactive list of the properties of the specified JavaScript object.",
+        "prefix": "cd"
+    },
+    "Console.error": {
+        "body": [
+            "console.error($1);"
+        ],
+        "description": "Outputs an error message to the Web Console.",
+        "prefix": "ce"
+    },
+    "Console.info": {
+        "body": [
+            "console.info($1);"
+        ],
+        "description": "Outputs an informational message to the Web Console. Only in Firefox, a small \"i\" icon is displayed next to these items in the Web Console's log.",
+        "prefix": "ci"
+    },
+    "Console.log": {
+        "body": [
+            "console.log($1);"
+        ],
+        "description": "The Console method log() outputs a message to the web console.",
+        "prefix": "cl"
+    },
+    "Console.warn": {
+        "body": [
+            "console.warn($1);"
+        ],
+        "description": "Outputs a warning message to the Web Console.",
+        "prefix": "cw"
+    },
+    "debugger": {
+        "body": [
+            "debugger;"
+        ],
+        "description": "The debugger statement invokes any available debugging functionality, such as setting a breakpoint.",
+        "prefix": "deb"
+    },
+    "default": {
+        "body": [
+            "default"
+        ],
+        "description": "Keyword",
+        "prefix": "def"
+    },
+    "do while": {
+        "body": [
+            "do {",
+            "\t$1",
+            "} while ();"
+        ],
+        "description": "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false.",
+        "prefix": "do"
+    },
+    "document": {
+        "body": [
+            "document"
+        ],
+        "description": "document",
+        "prefix": "doc"
+    },
+    "Document.createElement": {
+        "body": [
+            ".createElement($1);"
+        ],
+        "description": "In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.",
+        "prefix": ".cre"
+    },
+    "Element.add": {
+        "body": [
+            ".add($1);"
+        ],
+        "description": "Adds the specified class values. If these classes already exist in the element's class attribute they are ignored.",
+        "prefix": ".add"
+    },
+    "Element.classList": {
+        "body": [
+            ".classList"
+        ],
+        "description": "The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element.",
+        "prefix": ".cla"
+    },
+    "Element.classList.contains": {
+        "body": [
+            ".contains($1);"
+        ],
+        "description": "Checks if the specified class value exists in the element's class attribute.",
+        "prefix": ".con"
+    },
+    "Element.classList.remove": {
+        "body": [
+            ".remove($1);"
+        ],
+        "description": "Removes the specified class values.",
+        "prefix": ".rem"
+    },
+    "Element.classList.replace": {
+        "body": [
+            ".replace($1, );"
+        ],
+        "description": "Replaces an existing class with a new class.",
+        "prefix": ".rep"
+    },
+    "Element.classList.toggle": {
+        "body": [
+            ".toggle('$1');"
+        ],
+        "description": "When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return false, if not, then add it and return true.",
+        "prefix": ".tog"
+    },
+    "Element.getAttribute": {
+        "body": [
+            ".getAttribute($1)"
+        ],
+        "description": "The getAttribute() method of the Element interface returns the value of a specified attribute on the element.",
+        "prefix": ".get"
+    },
+    "Element.getElementById": {
+        "body": [
+            ".getElementById($1)"
+        ],
+        "description": "The Document method getElementById() returns an Element object representing the element whose id property matches the specified string.",
+        "prefix": ".get"
+    },
+    "Element.getElementsByClassName": {
+        "body": [
+            ".getElementsByClassName($1)"
+        ],
+        "description": "The Element method getElementsByClassName() returns a live HTMLCollection which contains every descendant element which has the specified class name or names.",
+        "prefix": ".get"
+    },
+    "Element.getElementsByTagName": {
+        "body": [
+            ".getElementsByTagName($1)"
+        ],
+        "description": "The Element.getElementsByTagName() method returns a live HTMLCollection of elements with the given tag name.",
+        "prefix": ".get"
+    },
+    "Element.hasAttribute": {
+        "body": [
+            ".hasAttribute($1)"
+        ],
+        "description": "The Element.hasAttribute() method returns a Boolean value indicating whether the specified element has the specified attribute or not.",
+        "prefix": ".has"
+    },
+    "Element.querySelector": {
+        "body": [
+            ".querySelector('$1')"
+        ],
+        "description": "The querySelector() method of the Element interface returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.",
+        "prefix": ".que"
+    },
+    "Element.querySelectorAll": {
+        "body": [
+            ".querySelectorAll('$1')"
+        ],
+        "description": "The Element method querySelectorAll() returns a static (not live) NodeList representing a list of elements matching the specified group of selectors which are descendants of the element on which the method was called.",
+        "prefix": ".que"
+    },
+    "Element.removeAttribute": {
+        "body": [
+            ".removeAttribute('$1')"
+        ],
+        "description": "The Element method removeAttribute() removes the attribute with the specified name from the element.",
+        "prefix": ".rem"
+    },
+    "Element.setAttribute": {
+        "body": [
+            ".setAttribute($1, )"
+        ],
+        "description": ".setAttribute('<attr: String>', '<val: String>')",
+        "prefix": ".set"
+    },
+    "EventTarget.addEventListener": {
+        "body": [
+            ".addEventListener($1, );"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": ".adde"
+    },
+    "EventTarget.addEventListener blur": {
+        "body": [
+            "blur"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "blu"
+    },
+    "EventTarget.addEventListener change": {
+        "body": [
+            "change"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "cha"
+    },
+    "EventTarget.addEventListener click": {
+        "body": [
+            "click"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "cli"
+    },
+    "EventTarget.addEventListener focus": {
+        "body": [
+            "focus"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "foc"
+    },
+    "EventTarget.addEventListener focusout": {
+        "body": [
+            "focusout"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "foc"
+    },
+    "EventTarget.addEventListener input": {
+        "body": [
+            "input"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "inp"
+    },
+    "EventTarget.addEventListener keydown": {
+        "body": [
+            "keydown"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "key"
+    },
+    "EventTarget.addEventListener mouseout": {
+        "body": [
+            "mouseout"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "mou"
+    },
+    "EventTarget.addEventListener mouseover": {
+        "body": [
+            "mouseover"
+        ],
+        "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
+        "prefix": "mou"
+    },
+    "EventTarget.dispatchEvent": {
+        "body": [
+            ".dispatchEvent($1);"
+        ],
+        "description": "Dispatches an Event at the specified EventTarget, (synchronously) invoking the affected EventListeners in the appropriate order.",
+        "prefix": ".dis"
+    },
+    "EventTarget.removeEventListener": {
+        "body": [
+            ".removeEventListener($1, );"
+        ],
+        "description": "The EventTarget.removeEventListener() method removes from the EventTarget an event listener previously registered with EventTarget.addEventListener().",
+        "prefix": ".reme"
+    },
+    "export": {
+        "body": [
+            "export"
+        ],
+        "description": "Keyword",
+        "prefix": "exp"
     },
     "for": {
-        "prefix": "for",
         "body": [
             "const $1Len = $1.length;",
             "for (let i = 0; i < $1Len; i += 1) {",
             "\tconst $1Item = $1[i];",
             "}"
         ],
-        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
-    },
-    "for min": {
-        "prefix": "form",
-        "body": [
-            "for (let j = 0; j < $1Len; j += 1) {",
-            "\tconst $1Item = $1[j];",
-            "}"
-        ],
-        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
-    },
-    "for reverse": {
-        "prefix": "forr",
-        "body": [
-            "for (let r = $1Len - 1; r >= 0; r -= 1) {",
-            "\tconst $1Item = $1[r];",
-            "}"
-        ],
-        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
-    },
-    "for in": {
-        "prefix": "forin",
-        "body": [
-            "for (const key in $1) {",
-            "\t",
-            "}"
-        ],
-        "description": "The for...in statement iterates over all non-Symbol, enumerable properties of an object."
-    },
-    "for of": {
-        "prefix": "forof",
-        "body": [
-            "for (const item of $1) {",
-            "\t",
-            "}"
-        ],
-        "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables."
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
+        "prefix": "for"
     },
     "for await of": {
-        "prefix": "foraof",
         "body": [
             "for await (let item of $1) {",
             "\t",
             "}"
         ],
-        "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables."
+        "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.",
+        "prefix": "foraof"
     },
-    "while": {
-        "prefix": "whi",
+    "for in": {
         "body": [
-            "while ($1) {",
+            "for (const key in $1) {",
             "\t",
             "}"
         ],
-        "description": "The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true."
+        "description": "The for...in statement iterates over all non-Symbol, enumerable properties of an object.",
+        "prefix": "forin"
     },
-    "do while": {
-        "prefix": "dowhi",
+    "for min": {
         "body": [
-            "do {",
-            "\t$1",
-            "} while ();"
+            "for (let j = 0; j < $1Len; j += 1) {",
+            "\tconst $1Item = $1[j];",
+            "}"
         ],
-        "description": "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false."
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
+        "prefix": "form"
+    },
+    "for of": {
+        "body": [
+            "for (const item of $1) {",
+            "\t",
+            "}"
+        ],
+        "description": "The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.",
+        "prefix": "forof"
+    },
+    "for reverse": {
+        "body": [
+            "for (let r = $1Len - 1; r >= 0; r -= 1) {",
+            "\tconst $1Item = $1[r];",
+            "}"
+        ],
+        "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
+        "prefix": "forr"
+    },
+    "function": {
+        "body": [
+            "function $1() {",
+            "\t",
+            "}"
+        ],
+        "description": "A function is a code snippet that can be called by other code or by itself, or a variable that refers to the function.",
+        "prefix": "fun"
+    },
+    "function arrow": {
+        "body": [
+            "($1) => {",
+            "\t",
+            "}"
+        ],
+        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords.",
+        "prefix": "fnar"
+    },
+    "function arrow array full": {
+        "body": [
+            "($1, i, arr) => {",
+            "\t",
+            "}"
+        ],
+        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords.",
+        "prefix": "fnaraf"
+    },
+    "function arrow min": {
+        "body": [
+            "$1 => $1"
+        ],
+        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords.",
+        "prefix": "fnarm"
+    },
+    "function iife": {
+        "body": [
+            "(function() {",
+            "\t$1",
+            "})();"
+        ],
+        "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.",
+        "prefix": "iife"
+    },
+    "Function.prototype": {
+        "body": [
+            ".prototype"
+        ],
+        "description": "The Function.prototype property represents the Function prototype object.",
+        "prefix": ".pro"
+    },
+    "Function.prototype.apply": {
+        "body": [
+            ".apply($1)"
+        ],
+        "description": "The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object).",
+        "prefix": ".app"
+    },
+    "Function.prototype.bind": {
+        "body": [
+            ".bind($1)"
+        ],
+        "description": "The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.",
+        "prefix": ".bin"
+    },
+    "Function.prototype.call": {
+        "body": [
+            ".call($1)"
+        ],
+        "description": "The call() method calls a function with a given this value and arguments provided individually.",
+        "prefix": ".cal"
+    },
+    "Import": {
+        "body": [
+            "import"
+        ],
+        "description": "The static import statement is used to import bindings which are exported by another module.",
+        "prefix": "imp"
+    },
+    "interface": {
+        "body": [
+            "interface $1 {",
+            "\t",
+            "}"
+        ],
+        "description": "The class declaration creates a new class with a given name using prototype-based inheritance.",
+        "prefix": "int"
+    },
+    "JSON.parse": {
+        "body": [
+            "JSON.parse($1);"
+        ],
+        "description": "The JSON.parse() method parses a JSON string, constructing the JavaScript value or object described by the string.",
+        "prefix": "jsonp"
+    },
+    "JSON.stringify": {
+        "body": [
+            "JSON.stringify($1);"
+        ],
+        "description": "The JSON.stringify() method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.",
+        "prefix": "jsons"
+    },
+    "New Map": {
+        "body": [
+            "new Map($1)"
+        ],
+        "description": "The Map object holds key-value pairs and remembers the original insertion order of the keys.",
+        "prefix": "map"
+    },
+    "New Promise": {
+        "body": [
+            "new Promise((resolve, reject) => {",
+            "\tresolve($1)",
+            "})"
+        ],
+        "description": "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
+        "prefix": "pro"
+    },
+    "New Set": {
+        "body": [
+            "new Set($1)"
+        ],
+        "description": "The Set object lets you store unique values of any type, whether primitive values or object references.",
+        "prefix": "set"
+    },
+    "Node.appendChild": {
+        "body": [
+            ".appendChild($1);"
+        ],
+        "description": "The Node.appendChild() method adds a node to the end of the list of children of a specified parent node.",
+        "prefix": ".app"
+    },
+    "Node.cloneNode": {
+        "body": [
+            ".cloneNode($1);"
+        ],
+        "description": "The Node.cloneNode() method returns a duplicate of the node on which this method was called.",
+        "prefix": ".clo"
+    },
+    "Node.contains": {
+        "body": [
+            ".contains($1);"
+        ],
+        "description": "The Node.contains() method returns a Boolean value indicating whether a node is a descendant of a given node.",
+        "prefix": ".con"
+    },
+    "Node.innerHTML": {
+        "body": [
+            ".innerHTML"
+        ],
+        "description": "The Element property innerHTML gets or sets the HTML or XML markup contained within the element.",
+        "prefix": ".inn"
+    },
+    "Node.insertBefore": {
+        "body": [
+            ".insertBefore($1);"
+        ],
+        "description": "The Node.insertBefore() method inserts a node before the reference node as a child of a specified parent node.",
+        "prefix": ".ins"
+    },
+    "Node.outerHTML": {
+        "body": [
+            ".outerHTML"
+        ],
+        "description": "The outerHTML attribute of the Element DOM interface gets the serialized HTML fragment describing the element including its descendants.",
+        "prefix": ".out"
+    },
+    "Node.parentElement": {
+        "body": [
+            ".parentElement"
+        ],
+        "description": "The Node.parentElement read-only property returns the DOM node's parent Element, or null if the node either has no parent, or its parent isn't a DOM Element.",
+        "prefix": ".par"
+    },
+    "Node.parentNode": {
+        "body": [
+            ".parentNode"
+        ],
+        "description": "The Node.parentNode read-only property returns the parent of the specified node in the DOM tree.",
+        "prefix": ".pare"
+    },
+    "Node.removeChild": {
+        "body": [
+            ".removeChild($1);"
+        ],
+        "description": "The Node.removeChild() method removes a child node from the DOM and returns the removed node.",
+        "prefix": ".rem"
+    },
+    "Node.replaceChild": {
+        "body": [
+            ".replaceChild($1, );"
+        ],
+        "description": "The Node.replaceChild() method replaces a child node within the given (parent) node.",
+        "prefix": ".rep"
+    },
+    "Node.textContent": {
+        "body": [
+            ".textContent"
+        ],
+        "description": "The textContent property of the Node interface represents the text content of the node and its descendants.",
+        "prefix": ".tex"
+    },
+    "Number.parseFloat": {
+        "body": [
+            "parseFloat($1)"
+        ],
+        "description": "The Number.parseFloat() method parses a string argument and returns a floating point number.",
+        "prefix": "par"
+    },
+    "Number.parseInt": {
+        "body": [
+            "parseInt($1)"
+        ],
+        "description": "The Number.parseInt() method parses a string argument and returns an integer of the specified radix or base.",
+        "prefix": "pars"
+    },
+    "Number.toFixed": {
+        "body": [
+            ".toFixed($1)"
+        ],
+        "description": "The toFixed() method formats a number using fixed-point notation.",
+        "prefix": ".tof"
+    },
+    "Object.prototype": {
+        "body": [
+            "Object"
+        ],
+        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
+        "prefix": "obj"
+    },
+    "Object.prototype.entries": {
+        "body": [
+            ".entries($1)"
+        ],
+        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.",
+        "prefix": ".ent"
+    },
+    "Object.prototype.keys": {
+        "body": [
+            ".keys($1)"
+        ],
+        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
+        "prefix": ".key"
+    },
+    "Object.prototype.values": {
+        "body": [
+            ".values($1)"
+        ],
+        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
+        "prefix": ".val"
+    },
+    "Promise.all": {
+        "body": [
+            "Promise.all($1)"
+        ],
+        "description": "The Promise.all() method returns a single Promise that fulfills when all of the promises passed as an iterable have been fulfilled or when the iterable contains no promises. It rejects with the reason of the first promise that rejects.",
+        "prefix": "pro"
+    },
+    "Promise.prototype.catch": {
+        "body": [
+            ".catch($);"
+        ],
+        "description": "The catch() method returns a Promise and deals with rejected cases only. ",
+        "prefix": ".cat"
+    },
+    "Promise.prototype.then": {
+        "body": [
+            ".then($1 => $1);"
+        ],
+        "description": "The then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise.",
+        "prefix": ".the"
     },
     "switch": {
-        "prefix": "swi",
         "body": [
             "switch ($1) {",
             "\tcase :",
@@ -870,174 +873,65 @@
             "\t\tbreak;",
             "}"
         ],
-        "description": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case."
+        "description": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.",
+        "prefix": "swi"
     },
-    "function": {
-        "prefix": "fn",
+    "while": {
         "body": [
-            "function $1() {",
+            "while ($1) {",
             "\t",
             "}"
         ],
-        "description": "A function is a code snippet that can be called by other code or by itself, or a variable that refers to the function."
+        "description": "The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true.",
+        "prefix": "whi"
     },
-    "function iife": {
-        "prefix": "iife",
+    "Window.alert": {
         "body": [
-            "(function() {",
-            "\t$1",
-            "})();"
+            "alert($1);"
         ],
-        "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined."
+        "description": "The Window.alert() method displays an alert dialog with the optional specified content and an OK button.",
+        "prefix": "ale"
     },
-    "anonymous function": {
-        "prefix": "fna",
+    "Window.confirm": {
         "body": [
-            "function() {",
-            "\t$1",
-            "}"
+            "confirm($1);"
         ],
-        "description": "An anonymous function is a function without a function name."
+        "description": "The Window.confirm() method displays a modal dialog with an optional message and two buttons: OK and Cancel.",
+        "prefix": "con"
     },
-    "function arrow min": {
-        "prefix": "fnarm",
+    "Window.prompt": {
         "body": [
-            "$1 => $1"
+            "prompt($1);"
         ],
-        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
-    },
-    "function arrow": {
-        "prefix": "fnar",
-        "body": [
-            "($1) => {",
-            "\t$1",
-            "}"
-        ],
-        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
-    },
-    "function arrow array full": {
-        "prefix": "fnaraf",
-        "body": [
-            "($1, i, arr) => {",
-            "\t$1",
-            "}"
-        ],
-        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords."
-    },
-    "Function.prototype.apply": {
-        "prefix": ".app",
-        "body": [
-            ".apply($1)"
-        ],
-        "description": "The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object)."
-    },
-    "Function.prototype.bind": {
-        "prefix": ".bin",
-        "body": [
-            ".bind($1)"
-        ],
-        "description": "The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called."
-    },
-    "Function.prototype.call": {
-        "prefix": ".cal",
-        "body": [
-            ".call($1)"
-        ],
-        "description": "The call() method calls a function with a given this value and arguments provided individually."
-    },
-    "Function.prototype": {
-        "prefix": ".pro",
-        "body": [
-            ".prototype"
-        ],
-        "description": "The Function.prototype property represents the Function prototype object."
-    },
-    "JSON.parse": {
-        "prefix": "jsonp",
-        "body": [
-            "JSON.parse($1);"
-        ],
-        "description": "The JSON.parse() method parses a JSON string, constructing the JavaScript value or object described by the string."
-    },
-    "JSON.stringify": {
-        "prefix": "jsons",
-        "body": [
-            "JSON.stringify($1);"
-        ],
-        "description": "The JSON.stringify() method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified."
-    },
-    "WindowOrWorkerGlobalScope.setInterval": {
-        "prefix": "seti",
-        "body": [
-            "setInterval(() => {",
-            "\t$1",
-            "}, 700);"
-        ],
-        "description": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call."
-    },
-    "WindowOrWorkerGlobalScope.setInterval min": {
-        "prefix": "setim",
-        "body": [
-            "setInterval(() => {$1}, 700);"
-        ],
-        "description": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call."
+        "description": "The Window.prompt() displays a dialog with an optional message prompting the user to input some text.",
+        "prefix": "pro"
     },
     "WindowOrWorkerGlobalScope.clearInterval": {
-        "prefix": "clei",
         "body": [
             "clearInterval($1);"
         ],
-        "description": "The clearInterval() method of the WindowOrWorkerGlobalScope mixin cancels a timed, repeating action which was previously established by a call to setInterval()."
-    },
-    "WindowOrWorkerGlobalScope.setTimeout": {
-        "prefix": "sett",
-        "body": [
-            "setTimeout(() => {",
-            "\t$1",
-            "}, 700);"
-        ],
-        "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires."
-    },
-    "WindowOrWorkerGlobalScope.setTimeout min": {
-        "prefix": "settm",
-        "body": [
-            "setTimeout(() => {$1}, 700);"
-        ],
-        "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires."
+        "description": "The clearInterval() method of the WindowOrWorkerGlobalScope mixin cancels a timed, repeating action which was previously established by a call to setInterval().",
+        "prefix": "cle"
     },
     "WindowOrWorkerGlobalScope.clearTime": {
-        "prefix": "clet",
         "body": [
             "clearTimeout($1);"
         ],
-        "description": "The clearTimeout() method of the WindowOrWorkerGlobalScope mixin cancels a timeout previously established by calling setTimeout()."
+        "description": "The clearTimeout() method of the WindowOrWorkerGlobalScope mixin cancels a timeout previously established by calling setTimeout().",
+        "prefix": "cle"
     },
-    "use strict": {
-        "prefix": "us",
+    "WindowOrWorkerGlobalScope.setInterval": {
         "body": [
-            "'use strict';"
+            "setInterval($1, 700);"
         ],
-        "description": "'use strict'"
+        "description": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.",
+        "prefix": "set"
     },
-    "Window.alert": {
-        "prefix": "wale",
+    "WindowOrWorkerGlobalScope.setTimeout": {
         "body": [
-            "alert('$1');"
+            "setTimeout($1, 700);"
         ],
-        "description": "The Window.alert() method displays an alert dialog with the optional specified content and an OK button."
-    },
-    "Window.confirm": {
-        "prefix": "wcon",
-        "body": [
-            "confirm('$1');"
-        ],
-        "description": "The Window.confirm() method displays a modal dialog with an optional message and two buttons: OK and Cancel."
-    },
-    "Window.prompt": {
-        "prefix": "wpro",
-        "body": [
-            "prompt('$1');"
-        ],
-        "description": "The Window.prompt() displays a dialog with an optional message prompting the user to input some text."
+        "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires.",
+        "prefix": "set"
     }
 }
