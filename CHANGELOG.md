@@ -1,3 +1,9 @@
+#### 2.0.1 (2021-10-29)
+
+##### Chores
+
+*  change publisher name ([ea1b24f9](https://github.com/Tertiumnon/tertium-js-snippets/commit/ea1b24f92a6124647fd2ba0d68a74678ca0c479b))
+
 ## 2.0.0 (2021-10-29)
 
 ##### New Features
