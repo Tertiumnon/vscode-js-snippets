@@ -2,7 +2,7 @@
     "name": "tertium-js-snippets",
     "displayName": "Tertium JS Snippets",
     "description": "JavaScript Snippets for Visual Studio Code",
-    "publisher": "vittertiumnon",
+    "publisher": "tertiumnon",
     "repository": {
         "url": "https://github.com/Tertiumnon/tertium-js-snippets"
     },
