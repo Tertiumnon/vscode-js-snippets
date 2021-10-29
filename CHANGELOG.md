@@ -1,3 +1,9 @@
+## 2.0.0 (2021-10-29)
+
+##### New Features
+
+*  use new naming, remove all quotes, remove duplicating functionality ([7088414d](https://github.com/Tertiumnon/tertium-js-snippets/commit/7088414d45f03e799e13ec62d3018ff3c9bc9cfd))
+
 ### 1.9.0 (2021-08-21)
 
 ##### Build System / Dependencies
