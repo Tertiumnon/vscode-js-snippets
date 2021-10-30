@@ -10,7 +10,7 @@
 .clo -> .cloneNode($1);
 .con -> .concat($1)
 .con -> .contains($1)
-.con -> .contains($1);
+.con -> .contains($1)
 .cop -> .copyWithin($1)
 .cre -> .create($1)
 .cre -> .createElement($1);
