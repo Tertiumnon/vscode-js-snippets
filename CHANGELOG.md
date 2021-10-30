@@ -1,3 +1,9 @@
+### 2.1.0 (2021-10-30)
+
+##### New Features
+
+*  add object methods, fix semicommas ([03fed135](https://github.com/Tertiumnon/tertium-js-snippets/commit/03fed1353ac4d6c9cbf09b451c0a727817f77d1e))
+
 #### 2.0.1 (2021-10-29)
 
 ##### Chores
