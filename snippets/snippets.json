@@ -15,47 +15,47 @@
         "description": "The JavaScript Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.",
         "prefix": "arr"
     },
-    "Array .from": {
-        "body": [
-            "Array.from($1)"
-        ],
-        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": "arr"
-    },
-    "Array .isArray": {
-        "body": [
-            "Array.isArray($1)"
-        ],
-        "description": "The Array.isArray() method determines whether the passed value is an Array.",
-        "prefix": "arr"
-    },
-    "Array .of": {
-        "body": [
-            "Array.of($1)"
-        ],
-        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
-        "prefix": "arr"
-    },
-    "Array.from": {
+    "Array.from(arrayLike, mapFn, thisArg)": {
         "body": [
             ".from($1)"
         ],
         "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
         "prefix": ".fro"
     },
-    "Array.isArray": {
+    "Array.from(arrayLike, mapFn, thisArg) ": {
+        "body": [
+            "Array.from($1)"
+        ],
+        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
+        "prefix": "arr"
+    },
+    "Array.isArray(value)": {
         "body": [
             ".isArray($1)"
         ],
         "description": "The Array.isArray() method determines whether the passed value is an Array.",
         "prefix": ".isa"
     },
-    "Array.of": {
+    "Array.isArray(value) ": {
+        "body": [
+            "Array.isArray($1)"
+        ],
+        "description": "The Array.isArray() method determines whether the passed value is an Array.",
+        "prefix": "arr"
+    },
+    "Array.of(element0, element1, ... , elementN)": {
         "body": [
             ".of($1)"
         ],
         "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
         "prefix": "of"
+    },
+    "Array.of(element0, element1, ... , elementN) ": {
+        "body": [
+            "Array.of($1)"
+        ],
+        "description": "The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.",
+        "prefix": "arr"
     },
     "Array.prototype.concat": {
         "body": [
@@ -759,7 +759,7 @@
     },
     "Node.contains": {
         "body": [
-            ".contains($1);"
+            ".contains($1)"
         ],
         "description": "The Node.contains() method returns a Boolean value indicating whether a node is a descendant of a given node.",
         "prefix": ".con"
@@ -848,159 +848,103 @@
         "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
         "prefix": "obj"
     },
-    "Object .assign": {
-        "body": [
-            "Object.assign($1, )"
-        ],
-        "description": "The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.",
-        "prefix": "obj"
-    },
-    "Object .create": {
-        "body": [
-            "Object.create($1, )"
-        ],
-        "description": "The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.",
-        "prefix": "obj"
-    },
-    "Object .defineProperties": {
-        "body": [
-            "Object.defineProperties($1, )"
-        ],
-        "description": "The Object.defineProperties() method defines new or modifies existing properties directly on an object, returning the object.",
-        "prefix": "obj"
-    },
-    "Object .defineProperty": {
-        "body": [
-            "Object.defineProperty($1, )"
-        ],
-        "description": "The static method Object.defineProperty() defines a new property directly on an object, or modifies an existing property on an object, and returns the object.",
-        "prefix": "obj"
-    },
-    "Object .entries": {
-        "body": [
-            "Object.entries($1)"
-        ],
-        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.",
-        "prefix": "obj"
-    },
-    "Object .freeze": {
-        "body": [
-            "Object.freeze($1)"
-        ],
-        "description": "The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed. freeze() returns the same object that was passed in.",
-        "prefix": "obj"
-    },
-    "Object .fromEntries": {
-        "body": [
-            "Object.fromEntries($1)"
-        ],
-        "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
-        "prefix": "obj"
-    },
-    "Object .is": {
-        "body": [
-            "Object.is($1, )"
-        ],
-        "description": "The Object.is() method determines whether two values are the same value.",
-        "prefix": "obj"
-    },
-    "Object .isExtensible": {
-        "body": [
-            "Object.isExtensible($1)"
-        ],
-        "description": "The Object.isExtensible() method determines if an object is extensible (whether it can have new properties added to it).",
-        "prefix": "obj"
-    },
-    "Object .isFrozen": {
-        "body": [
-            "Object.isFrozen($1)"
-        ],
-        "description": "The Object.isFrozen() determines if an object is frozen.",
-        "prefix": "obj"
-    },
-    "Object .isSealed": {
-        "body": [
-            "Object.isSealed($1)"
-        ],
-        "description": "The Object.isSealed() method determines if an object is sealed.",
-        "prefix": "obj"
-    },
-    "Object .keys": {
-        "body": [
-            "Object.keys($1)"
-        ],
-        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
-        "prefix": "obj"
-    },
-    "Object .preventExtensions": {
-        "body": [
-            "Object.preventExtensions($1)"
-        ],
-        "description": "The Object.preventExtensions() method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).",
-        "prefix": "obj"
-    },
-    "Object .seal": {
-        "body": [
-            "Object.seal($1)"
-        ],
-        "description": "The Object.seal() method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.",
-        "prefix": "obj"
-    },
-    "Object .values": {
-        "body": [
-            "Object.values($1)"
-        ],
-        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
-        "prefix": "obj"
-    },
-    "Object.assign": {
+    "Object.assign(target, ...sources)": {
         "body": [
             ".assign($1, )"
         ],
         "description": "The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.",
         "prefix": ".ass"
     },
-    "Object.create": {
+    "Object.assign(target, ...sources) ": {
+        "body": [
+            "Object.assign($1, )"
+        ],
+        "description": "The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the modified target object.",
+        "prefix": "obj"
+    },
+    "Object.create(proto, propertiesObject)": {
         "body": [
             ".create($1)"
         ],
         "description": "The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.",
         "prefix": ".cre"
     },
-    "Object.defineProperties": {
+    "Object.create(proto, propertiesObject) ": {
+        "body": [
+            "Object.create($1, )"
+        ],
+        "description": "The Object.create() method creates a new object, using an existing object as the prototype of the newly created object.",
+        "prefix": "obj"
+    },
+    "Object.defineProperties(obj, props)": {
         "body": [
             ".defineProperties($1, )"
         ],
         "description": "The Object.defineProperties() method defines new or modifies existing properties directly on an object, returning the object.",
         "prefix": ".def"
     },
-    "Object.defineProperty": {
+    "Object.defineProperties(obj, props) ": {
+        "body": [
+            "Object.defineProperties($1, )"
+        ],
+        "description": "The Object.defineProperties() method defines new or modifies existing properties directly on an object, returning the object.",
+        "prefix": "obj"
+    },
+    "Object.defineProperty(obj, prop, descriptor)": {
         "body": [
             ".defineProperty($1, )"
         ],
         "description": "The static method Object.defineProperty() defines a new property directly on an object, or modifies an existing property on an object, and returns the object.",
         "prefix": ".def"
     },
-    "Object.entries": {
+    "Object.defineProperty(obj, prop, descriptor) ": {
+        "body": [
+            "Object.defineProperty($1, )"
+        ],
+        "description": "The static method Object.defineProperty() defines a new property directly on an object, or modifies an existing property on an object, and returns the object.",
+        "prefix": "obj"
+    },
+    "Object.entries(obj)": {
         "body": [
             ".entries($1)"
         ],
         "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.",
         "prefix": ".ent"
     },
-    "Object.freeze": {
+    "Object.entries(obj) ": {
+        "body": [
+            "Object.entries($1)"
+        ],
+        "description": "The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop.",
+        "prefix": "obj"
+    },
+    "Object.freeze(obj)": {
         "body": [
             ".freeze($1)"
         ],
         "description": "The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed. freeze() returns the same object that was passed in.",
         "prefix": ".fre"
     },
-    "Object.fromEntries": {
+    "Object.freeze(obj) ": {
+        "body": [
+            "Object.freeze($1)"
+        ],
+        "description": "The Object.freeze() method freezes an object. A frozen object can no longer be changed; freezing an object prevents new properties from being added to it, existing properties from being removed, prevents changing the enumerability, configurability, or writability of existing properties, and prevents the values of existing properties from being changed. In addition, freezing an object also prevents its prototype from being changed. freeze() returns the same object that was passed in.",
+        "prefix": "obj"
+    },
+    "Object.fromEntries(iterable)": {
         "body": [
             ".fromEntries($1)"
         ],
         "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
         "prefix": ".fro"
+    },
+    "Object.fromEntries(iterable) ": {
+        "body": [
+            "Object.fromEntries($1)"
+        ],
+        "description": "The Object.fromEntries() method transforms a list of key-value pairs into an object.",
+        "prefix": "obj"
     },
     "Object.is": {
         "body": [
@@ -1009,12 +953,26 @@
         "description": "The Object.is() method determines whether two values are the same value.",
         "prefix": ".is"
     },
+    "Object.is(value1, value2)": {
+        "body": [
+            "Object.is($1, )"
+        ],
+        "description": "The Object.is() method determines whether two values are the same value.",
+        "prefix": "obj"
+    },
     "Object.isExtensible": {
         "body": [
             ".isExtensible($1)"
         ],
         "description": "The Object.isExtensible() method determines if an object is extensible (whether it can have new properties added to it).",
         "prefix": ".ise"
+    },
+    "Object.isExtensible(obj)": {
+        "body": [
+            "Object.isExtensible($1)"
+        ],
+        "description": "The Object.isExtensible() method determines if an object is extensible (whether it can have new properties added to it).",
+        "prefix": "obj"
     },
     "Object.isFrozen": {
         "body": [
@@ -1023,12 +981,26 @@
         "description": "The Object.isFrozen() determines if an object is frozen.",
         "prefix": ".isf"
     },
+    "Object.isFrozen(obj)": {
+        "body": [
+            "Object.isFrozen($1)"
+        ],
+        "description": "The Object.isFrozen() determines if an object is frozen.",
+        "prefix": "obj"
+    },
     "Object.isSealed": {
         "body": [
             ".isSealed($1)"
         ],
         "description": "The Object.isSealed() method determines if an object is sealed.",
         "prefix": ".iss"
+    },
+    "Object.isSealed(obj)": {
+        "body": [
+            "Object.isSealed($1)"
+        ],
+        "description": "The Object.isSealed() method determines if an object is sealed.",
+        "prefix": "obj"
     },
     "Object.keys": {
         "body": [
@@ -1037,12 +1009,26 @@
         "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
         "prefix": ".key"
     },
+    "Object.keys(obj)": {
+        "body": [
+            "Object.keys($1)"
+        ],
+        "description": "The keys() method returns a new Array Iterator object that contains the keys for each index in the array.",
+        "prefix": "obj"
+    },
     "Object.preventExtensions": {
         "body": [
             ".preventExtensions($1)"
         ],
         "description": "The Object.preventExtensions() method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).",
         "prefix": ".pre"
+    },
+    "Object.preventExtensions(obj)": {
+        "body": [
+            "Object.preventExtensions($1)"
+        ],
+        "description": "The Object.preventExtensions() method prevents new properties from ever being added to an object (i.e. prevents future extensions to the object).",
+        "prefix": "obj"
     },
     "Object.seal": {
         "body": [
@@ -1051,12 +1037,26 @@
         "description": "The Object.seal() method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.",
         "prefix": ".sea"
     },
+    "Object.seal(obj)": {
+        "body": [
+            "Object.seal($1)"
+        ],
+        "description": "The Object.seal() method seals an object, preventing new properties from being added to it and marking all existing properties as non-configurable. Values of present properties can still be changed as long as they are writable.",
+        "prefix": "obj"
+    },
     "Object.values": {
         "body": [
             ".values($1)"
         ],
         "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
         "prefix": ".val"
+    },
+    "Object.values(obj)": {
+        "body": [
+            "Object.values($1)"
+        ],
+        "description": "The values() method returns a new Array Iterator object that contains the values for each index in the array.",
+        "prefix": "obj"
     },
     "Promise.all": {
         "body": [
