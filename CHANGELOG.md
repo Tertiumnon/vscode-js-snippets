@@ -1,3 +1,9 @@
+#### 2.2.1 (2021-10-30)
+
+##### Documentation Changes
+
+*  update declarations ([bb799b75](https://github.com/Tertiumnon/tertium-js-snippets/commit/bb799b75b87014143b653b81277db45f0409e459))
+
 ### 2.2.0 (2021-10-30)
 
 ##### New Features
