@@ -2,15 +2,7 @@
 
 Collection of JavaScript snippets for your productivity.
 
-## Features
-
-### Classic declarations
-
-![Classic declarations](images/features/standart-declarations.png)
-
-### Dot declarations
-
-![Dot declarations](images/features/dot-declarations.png)
+![declarations](images/tertium-js-snippets.gif)
 
 ## Declarations
 
