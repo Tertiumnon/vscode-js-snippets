@@ -1,3 +1,9 @@
+### 2.2.0 (2021-10-30)
+
+##### New Features
+
+*  add object and array arguments ([cffabefa](https://github.com/Tertiumnon/tertium-js-snippets/commit/cffabefa787838b5898fcf011bbd403d9862040b))
+
 ### 2.1.0 (2021-10-30)
 
 ##### New Features
