@@ -1,3 +1,9 @@
+#### 2.2.2 (2021-10-30)
+
+##### Documentation Changes
+
+*  add new readme image ([bcb1e132](https://github.com/Tertiumnon/tertium-js-snippets/commit/bcb1e132edb60d7209bf60b7bd5afdb29ff1488e))
+
 #### 2.2.1 (2021-10-30)
 
 ##### Documentation Changes
