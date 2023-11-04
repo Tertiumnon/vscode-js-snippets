@@ -12,7 +12,7 @@
         "body": [
             "Array"
         ],
-        "description": "The JavaScript Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.",
+        "description": "The JavaScript Array class is a global object that is used in the construction of arrays which are high-level, list-like objects.",
         "prefix": "arr"
     },
     "Array.from(arrayLike, mapFn, thisArg)": {
@@ -229,12 +229,12 @@
         "body": [
             "(a, b) => {",
             "\tif ($1) {",
-            "\t\treturn -1;",
+            "\t\treturn -1",
             "\t}",
             "\tif () {",
-            "\t\treturn 1;",
+            "\t\treturn 1",
             "\t}",
-            "\treturn 0;",
+            "\treturn 0",
             "}"
         ],
         "description": "The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.",
@@ -293,42 +293,42 @@
     },
     "Console.dir": {
         "body": [
-            "console.dir($1);"
+            "console.dir($1)"
         ],
         "description": "The Console method dir() displays an interactive list of the properties of the specified JavaScript object.",
         "prefix": "cd"
     },
     "Console.error": {
         "body": [
-            "console.error($1);"
+            "console.error($1)"
         ],
         "description": "Outputs an error message to the Web Console.",
         "prefix": "ce"
     },
     "Console.info": {
         "body": [
-            "console.info($1);"
+            "console.info($1)"
         ],
         "description": "Outputs an informational message to the Web Console. Only in Firefox, a small \"i\" icon is displayed next to these items in the Web Console's log.",
         "prefix": "ci"
     },
     "Console.log": {
         "body": [
-            "console.log($1);"
+            "console.log($1)"
         ],
         "description": "The Console method log() outputs a message to the web console.",
         "prefix": "cl"
     },
     "Console.warn": {
         "body": [
-            "console.warn($1);"
+            "console.warn($1)"
         ],
         "description": "Outputs a warning message to the Web Console.",
         "prefix": "cw"
     },
     "debugger": {
         "body": [
-            "debugger;"
+            "debugger"
         ],
         "description": "The debugger statement invokes any available debugging functionality, such as setting a breakpoint.",
         "prefix": "deb"
@@ -344,7 +344,7 @@
         "body": [
             "do {",
             "\t$1",
-            "} while ();"
+            "} while ()"
         ],
         "description": "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false.",
         "prefix": "do"
@@ -358,14 +358,14 @@
     },
     "Document.createElement": {
         "body": [
-            ".createElement($1);"
+            ".createElement($1)"
         ],
         "description": "In an HTML document, the document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.",
         "prefix": ".cre"
     },
     "Element.add": {
         "body": [
-            ".add($1);"
+            ".add($1)"
         ],
         "description": "Adds the specified class values. If these classes already exist in the element's class attribute they are ignored.",
         "prefix": ".add"
@@ -386,21 +386,21 @@
     },
     "Element.classList.remove": {
         "body": [
-            ".remove($1);"
+            ".remove($1)"
         ],
         "description": "Removes the specified class values.",
         "prefix": ".rem"
     },
     "Element.classList.replace": {
         "body": [
-            ".replace($1, );"
+            ".replace($1, )"
         ],
         "description": "Replaces an existing class with a new class.",
         "prefix": ".rep"
     },
     "Element.classList.toggle": {
         "body": [
-            ".toggle($1);"
+            ".toggle($1)"
         ],
         "description": "When only one argument is present: Toggle the class value; i.e., if the class exists then remove it and return false, if not, then add it and return true.",
         "prefix": ".tog"
@@ -456,21 +456,21 @@
     },
     "Element.removeAttribute": {
         "body": [
-            ".removeAttribute($1);"
+            ".removeAttribute($1)"
         ],
         "description": "The Element method removeAttribute() removes the attribute with the specified name from the element.",
         "prefix": ".rem"
     },
     "Element.setAttribute": {
         "body": [
-            ".setAttribute($1, );"
+            ".setAttribute($1, )"
         ],
         "description": "Sets the value of an attribute on the specified element. If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.",
         "prefix": ".set"
     },
     "EventTarget.addEventListener": {
         "body": [
-            ".addEventListener($1, );"
+            ".addEventListener($1, )"
         ],
         "description": "The EventTarget method addEventListener() sets up a function that will be called whenever the specified event is delivered to the target.",
         "prefix": ".add"
@@ -540,14 +540,14 @@
     },
     "EventTarget.dispatchEvent": {
         "body": [
-            ".dispatchEvent($1);"
+            ".dispatchEvent($1)"
         ],
         "description": "Dispatches an Event at the specified EventTarget, (synchronously) invoking the affected EventListeners in the appropriate order.",
         "prefix": ".dis"
     },
     "EventTarget.removeEventListener": {
         "body": [
-            ".removeEventListener($1, );"
+            ".removeEventListener($1, )"
         ],
         "description": "The EventTarget.removeEventListener() method removes from the EventTarget an event listener previously registered with EventTarget.addEventListener().",
         "prefix": ".rem"
@@ -561,9 +561,9 @@
     },
     "for": {
         "body": [
-            "const $1Len = $1.length;",
+            "const $1Len = $1.length",
             "for (let i = 0; i < $1Len; i += 1) {",
-            "\tconst $1Item = $1[i];",
+            "\tconst $1Item = $1[i]",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
@@ -590,7 +590,7 @@
     "for min": {
         "body": [
             "for (let j = 0; j < $1Len; j += 1) {",
-            "\tconst $1Item = $1[j];",
+            "\tconst $1Item = $1[j]",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
@@ -608,7 +608,7 @@
     "for reverse": {
         "body": [
             "for (let r = $1Len - 1; r >= 0; r -= 1) {",
-            "\tconst $1Item = $1[r];",
+            "\tconst $1Item = $1[r]",
             "}"
         ],
         "description": "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.",
@@ -632,18 +632,9 @@
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords.",
         "prefix": "fnar"
     },
-    "function arrow array full": {
-        "body": [
-            "($1, i, arr) => {",
-            "\t",
-            "}"
-        ],
-        "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords.",
-        "prefix": "fnaraf"
-    },
     "function arrow min": {
         "body": [
-            "$1 => $1"
+            "($1) => $1"
         ],
         "description": "An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to the this, arguments, super, or new.target keywords.",
         "prefix": "fnarm"
@@ -652,7 +643,7 @@
         "body": [
             "(function() {",
             "\t$1",
-            "})();"
+            "})()"
         ],
         "description": "An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.",
         "prefix": "iife"
@@ -687,35 +678,21 @@
     },
     "Import": {
         "body": [
-            "import"
+            "import  from $1"
         ],
         "description": "The static import statement is used to import bindings which are exported by another module.",
         "prefix": "imp"
     },
-    "Import one": {
-        "body": [
-            "import  from $1;"
-        ],
-        "description": "The static import statement is used to import bindings which are exported by another module.",
-        "prefix": "impm"
-    },
-    "Import some": {
-        "body": [
-            "import {  } from $1;"
-        ],
-        "description": "The static import statement is used to import bindings which are exported by another module.",
-        "prefix": "imps"
-    },
     "JSON .parse": {
         "body": [
-            "JSON.parse($1);"
+            "JSON.parse($1)"
         ],
         "description": "The JSON.parse() method parses a JSON string, constructing the JavaScript value or object described by the string.",
         "prefix": "json"
     },
     "JSON .stringify": {
         "body": [
-            "JSON.stringify($1);"
+            "JSON.stringify($1)"
         ],
         "description": "The JSON.stringify() method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified.",
         "prefix": "json"
@@ -730,7 +707,7 @@
     "New Promise": {
         "body": [
             "new Promise((resolve, reject) => {",
-            "\tresolve($1);",
+            "\tresolve($1)",
             "})"
         ],
         "description": "The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.",
@@ -745,14 +722,14 @@
     },
     "Node.appendChild": {
         "body": [
-            ".appendChild($1);"
+            ".appendChild($1)"
         ],
         "description": "The Node.appendChild() method adds a node to the end of the list of children of a specified parent node.",
         "prefix": ".app"
     },
     "Node.cloneNode": {
         "body": [
-            ".cloneNode($1);"
+            ".cloneNode($1)"
         ],
         "description": "The Node.cloneNode() method returns a duplicate of the node on which this method was called.",
         "prefix": ".clo"
@@ -773,7 +750,7 @@
     },
     "Node.insertBefore": {
         "body": [
-            ".insertBefore($1);"
+            ".insertBefore($1)"
         ],
         "description": "The Node.insertBefore() method inserts a node before the reference node as a child of a specified parent node.",
         "prefix": ".ins"
@@ -801,14 +778,14 @@
     },
     "Node.removeChild": {
         "body": [
-            ".removeChild($1);"
+            ".removeChild($1)"
         ],
         "description": "The Node.removeChild() method removes a child node from the DOM and returns the removed node.",
         "prefix": ".rem"
     },
     "Node.replaceChild": {
         "body": [
-            ".replaceChild($1, );"
+            ".replaceChild($1, )"
         ],
         "description": "The Node.replaceChild() method replaces a child node within the given (parent) node.",
         "prefix": ".rep"
@@ -1067,7 +1044,7 @@
     },
     "Promise.prototype.catch": {
         "body": [
-            ".catch($);"
+            ".catch($)"
         ],
         "description": "The catch() method returns a Promise and deals with rejected cases only. ",
         "prefix": ".cat"
@@ -1083,9 +1060,9 @@
         "body": [
             "switch ($1) {",
             "\tcase :",
-            "\t\tbreak;",
+            "\t\tbreak",
             "\tdefault:",
-            "\t\tbreak;",
+            "\t\tbreak",
             "}"
         ],
         "description": "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.",
@@ -1102,49 +1079,49 @@
     },
     "Window.alert": {
         "body": [
-            "alert($1);"
+            "alert($1)"
         ],
         "description": "The Window.alert() method displays an alert dialog with the optional specified content and an OK button.",
         "prefix": "ale"
     },
     "Window.confirm": {
         "body": [
-            "confirm($1);"
+            "confirm($1)"
         ],
         "description": "The Window.confirm() method displays a modal dialog with an optional message and two buttons: OK and Cancel.",
         "prefix": "con"
     },
     "Window.prompt": {
         "body": [
-            "prompt($1);"
+            "prompt($1)"
         ],
         "description": "The Window.prompt() displays a dialog with an optional message prompting the user to input some text.",
         "prefix": "pro"
     },
     "WindowOrWorkerGlobalScope.clearInterval": {
         "body": [
-            "clearInterval($1);"
+            "clearInterval($1)"
         ],
         "description": "The clearInterval() method of the WindowOrWorkerGlobalScope mixin cancels a timed, repeating action which was previously established by a call to setInterval().",
         "prefix": "cle"
     },
     "WindowOrWorkerGlobalScope.clearTime": {
         "body": [
-            "clearTimeout($1);"
+            "clearTimeout($1)"
         ],
         "description": "The clearTimeout() method of the WindowOrWorkerGlobalScope mixin cancels a timeout previously established by calling setTimeout().",
         "prefix": "cle"
     },
     "WindowOrWorkerGlobalScope.setInterval": {
         "body": [
-            "setInterval($1, 700);"
+            "setInterval($1, 700)"
         ],
         "description": "The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.",
         "prefix": "set"
     },
     "WindowOrWorkerGlobalScope.setTimeout": {
         "body": [
-            "setTimeout($1, 700);"
+            "setTimeout($1, 700)"
         ],
         "description": "The setTimeout() method of the WindowOrWorkerGlobalScope mixin (and successor to Window.setTimeout()) sets a timer which executes a function or specified piece of code once the timer expires.",
         "prefix": "set"
