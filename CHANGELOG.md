@@ -1,3 +1,9 @@
+### 2.3.0 (2023-11-04)
+
+##### New Features
+
+*  remove semicolon ([d0bf8a93](https://github.com/Tertiumnon/tertium-js-snippets/commit/d0bf8a93ea4d85649424e96dc600a55c655d61e4))
+
 #### 2.2.2 (2021-10-30)
 
 ##### Documentation Changes
